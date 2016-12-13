@@ -10,6 +10,7 @@ import java.util.HashSet;
 import java.util.List;
 
 import fairplay.converters.FairplayToSPACLConverter;
+import fairplay.gate.GateConstructor;
 
 public class CommonUtilities {
 	public static final String PRIVATE_IN = "private_common_in";

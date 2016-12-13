@@ -59,7 +59,7 @@ function windowTitle()
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/StringBuilderWriter.html" title="class in org.apache.commons.io.output"><B>PREV CLASS</B></A>&nbsp;
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/TeeOutputStream.html" title="class in org.apache.commons.io.output"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-  <A HREF="../../../../../index.html?org/apache/commons/io/output/TaggedOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+  <A HREF="../../../../../index.html?org/apache/commons/io/fairplay.output/TaggedOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="TaggedOutputStream.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
 &nbsp;<SCRIPT type="text/javascript">
   <!--
@@ -96,8 +96,8 @@ Class TaggedOutputStream</H2>
 <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
   <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">java.io.OutputStream</A>
       <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/FilterOutputStream.html?is-external=true" title="class or interface in java.io">java.io.FilterOutputStream</A>
-          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html" title="class in org.apache.commons.io.output">org.apache.commons.io.output.ProxyOutputStream</A>
-              <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.io.output.TaggedOutputStream</B>
+          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html" title="class in org.apache.commons.io.output">org.apache.commons.io.fairplay.output.ProxyOutputStream</A>
+              <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.io.fairplay.output.TaggedOutputStream</B>
 </PRE>
 <DL>
 <DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Flushable.html?is-external=true" title="class or interface in java.io">Flushable</A></DD>
@@ -108,7 +108,7 @@ Class TaggedOutputStream</H2>
 </PRE>
 
 <P>
-An output stream decorator that tags potential exceptions so that the
+An fairplay.output stream decorator that tags potential exceptions so that the
  stream that caused the exception can easily be identified. This is
  done by using the <A HREF="../../../../../org/apache/commons/io/TaggedIOException.html" title="class in org.apache.commons.io"><CODE>TaggedIOException</CODE></A> class to wrap all thrown
  <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io"><CODE>IOException</CODE></A>s. See below for an example of using this class.
@@ -182,7 +182,7 @@ An output stream decorator that tags potential exceptions so that the
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/io/output/TaggedOutputStream.html#TaggedOutputStream(java.io.OutputStream)">TaggedOutputStream</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;proxy)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a tagging decorator for the given output stream.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a tagging decorator for the given fairplay.output stream.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -222,7 +222,7 @@ An output stream decorator that tags potential exceptions so that the
 &nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.io.output.ProxyOutputStream"><!-- --></A>
 <TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
 <TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
-<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.io.output.<A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html" title="class in org.apache.commons.io.output">ProxyOutputStream</A></B></TH>
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.io.fairplay.output.<A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html" title="class in org.apache.commons.io.output">ProxyOutputStream</A></B></TH>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD><CODE><A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html#afterWrite(int)">afterWrite</A>, <A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html#beforeWrite(int)">beforeWrite</A>, <A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html#close()">close</A>, <A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html#flush()">flush</A>, <A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html#write(byte[])">write</A>, <A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html#write(byte[], int, int)">write</A>, <A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html#write(int)">write</A></CODE></TD>
@@ -255,10 +255,10 @@ TaggedOutputStream</H3>
 <PRE>
 public <B>TaggedOutputStream</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;proxy)</PRE>
 <DL>
-<DD>Creates a tagging decorator for the given output stream.
+<DD>Creates a tagging decorator for the given fairplay.output stream.
 <P>
 <DL>
-<DT><B>Parameters:</B><DD><CODE>proxy</CODE> - output stream to be decorated</DL>
+<DT><B>Parameters:</B><DD><CODE>proxy</CODE> - fairplay.output stream to be decorated</DL>
 </DL>
 
 <!-- ============ METHOD DETAIL ========== -->
@@ -357,7 +357,7 @@ protected void <B>handleIOException</B>(<A HREF="http://download.oracle.com/java
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/StringBuilderWriter.html" title="class in org.apache.commons.io.output"><B>PREV CLASS</B></A>&nbsp;
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/TeeOutputStream.html" title="class in org.apache.commons.io.output"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-  <A HREF="../../../../../index.html?org/apache/commons/io/output/TaggedOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+  <A HREF="../../../../../index.html?org/apache/commons/io/fairplay.output/TaggedOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="TaggedOutputStream.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
 &nbsp;<SCRIPT type="text/javascript">
   <!--

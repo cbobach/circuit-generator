@@ -4041,7 +4041,7 @@
 <FONT color="green">4038</FONT>            // if recursing, this shouldn't be less than 0<a name="line.4038"></a>
 <FONT color="green">4039</FONT>            if (timeToLive &lt; 0) {<a name="line.4039"></a>
 <FONT color="green">4040</FONT>                throw new IllegalStateException("Aborting to protect against StackOverflowError - " +<a name="line.4040"></a>
-<FONT color="green">4041</FONT>                                                "output of one loop is the input of another");<a name="line.4041"></a>
+<FONT color="green">4041</FONT>                                                "fairplay.output of one loop is the input of another");<a name="line.4041"></a>
 <FONT color="green">4042</FONT>            }<a name="line.4042"></a>
 <FONT color="green">4043</FONT>    <a name="line.4043"></a>
 <FONT color="green">4044</FONT>            int searchLength = searchList.length;<a name="line.4044"></a>
@@ -5972,7 +5972,7 @@
 <FONT color="green">5969</FONT>    <a name="line.5969"></a>
 <FONT color="green">5970</FONT>        /**<a name="line.5970"></a>
 <FONT color="green">5971</FONT>         * &lt;p&gt;Compares all Strings in an array and returns the initial sequence of<a name="line.5971"></a>
-<FONT color="green">5972</FONT>         * characters that is common to all of them.&lt;/p&gt;<a name="line.5972"></a>
+<FONT color="green">5972</FONT>         * characters that is fairplay.common to all of them.&lt;/p&gt;<a name="line.5972"></a>
 <FONT color="green">5973</FONT>         *<a name="line.5973"></a>
 <FONT color="green">5974</FONT>         * &lt;p&gt;For example,<a name="line.5974"></a>
 <FONT color="green">5975</FONT>         * &lt;code&gt;getCommonPrefix(new String[] {"i am a machine", "i am a robot"}) -&gt; "i am a "&lt;/code&gt;&lt;/p&gt;<a name="line.5975"></a>
@@ -5998,9 +5998,9 @@
 <FONT color="green">5995</FONT>         * &lt;/pre&gt;<a name="line.5995"></a>
 <FONT color="green">5996</FONT>         *<a name="line.5996"></a>
 <FONT color="green">5997</FONT>         * @param strs  array of String objects, entries may be null<a name="line.5997"></a>
-<FONT color="green">5998</FONT>         * @return the initial sequence of characters that are common to all Strings<a name="line.5998"></a>
+<FONT color="green">5998</FONT>         * @return the initial sequence of characters that are fairplay.common to all Strings<a name="line.5998"></a>
 <FONT color="green">5999</FONT>         * in the array; empty String if the array is null, the elements are all null<a name="line.5999"></a>
-<FONT color="green">6000</FONT>         * or if there is no common prefix.<a name="line.6000"></a>
+<FONT color="green">6000</FONT>         * or if there is no fairplay.common prefix.<a name="line.6000"></a>
 <FONT color="green">6001</FONT>         * @since 2.4<a name="line.6001"></a>
 <FONT color="green">6002</FONT>         */<a name="line.6002"></a>
 <FONT color="green">6003</FONT>        public static String getCommonPrefix(String... strs) {<a name="line.6003"></a>
@@ -6015,10 +6015,10 @@
 <FONT color="green">6012</FONT>                }<a name="line.6012"></a>
 <FONT color="green">6013</FONT>                return strs[0];<a name="line.6013"></a>
 <FONT color="green">6014</FONT>            } else if (smallestIndexOfDiff == 0) {<a name="line.6014"></a>
-<FONT color="green">6015</FONT>                // there were no common initial characters<a name="line.6015"></a>
+<FONT color="green">6015</FONT>                // there were no fairplay.common initial characters<a name="line.6015"></a>
 <FONT color="green">6016</FONT>                return EMPTY;<a name="line.6016"></a>
 <FONT color="green">6017</FONT>            } else {<a name="line.6017"></a>
-<FONT color="green">6018</FONT>                // we found a common initial character sequence<a name="line.6018"></a>
+<FONT color="green">6018</FONT>                // we found a fairplay.common initial character sequence<a name="line.6018"></a>
 <FONT color="green">6019</FONT>                return strs[0].substring(0, smallestIndexOfDiff);<a name="line.6019"></a>
 <FONT color="green">6020</FONT>            }<a name="line.6020"></a>
 <FONT color="green">6021</FONT>        }<a name="line.6021"></a>

@@ -75,8 +75,8 @@
 <FONT color="green">072</FONT>        public static final CharSet ASCII_NUMERIC = new CharSet("0-9");<a name="line.72"></a>
 <FONT color="green">073</FONT>    <a name="line.73"></a>
 <FONT color="green">074</FONT>        /**<a name="line.74"></a>
-<FONT color="green">075</FONT>         * A Map of the common cases used in the factory.<a name="line.75"></a>
-<FONT color="green">076</FONT>         * Subclasses can add more common patterns if desired<a name="line.76"></a>
+<FONT color="green">075</FONT>         * A Map of the fairplay.common cases used in the factory.<a name="line.75"></a>
+<FONT color="green">076</FONT>         * Subclasses can add more fairplay.common patterns if desired<a name="line.76"></a>
 <FONT color="green">077</FONT>         * @since 2.0<a name="line.77"></a>
 <FONT color="green">078</FONT>         */<a name="line.78"></a>
 <FONT color="green">079</FONT>        protected static final Map&lt;String, CharSet&gt; COMMON = Collections.synchronizedMap(new HashMap&lt;String, CharSet&gt;());<a name="line.79"></a>
@@ -143,9 +143,9 @@
 <FONT color="green">140</FONT>                return null;<a name="line.140"></a>
 <FONT color="green">141</FONT>            }<a name="line.141"></a>
 <FONT color="green">142</FONT>            if (setStrs.length == 1) {<a name="line.142"></a>
-<FONT color="green">143</FONT>                CharSet common = COMMON.get(setStrs[0]);<a name="line.143"></a>
-<FONT color="green">144</FONT>                if (common != null) {<a name="line.144"></a>
-<FONT color="green">145</FONT>                    return common;<a name="line.145"></a>
+<FONT color="green">143</FONT>                CharSet fairplay.common = COMMON.get(setStrs[0]);<a name="line.143"></a>
+<FONT color="green">144</FONT>                if (fairplay.common != null) {<a name="line.144"></a>
+<FONT color="green">145</FONT>                    return fairplay.common;<a name="line.145"></a>
 <FONT color="green">146</FONT>                }<a name="line.146"></a>
 <FONT color="green">147</FONT>            }<a name="line.147"></a>
 <FONT color="green">148</FONT>            return new CharSet(setStrs); <a name="line.148"></a>

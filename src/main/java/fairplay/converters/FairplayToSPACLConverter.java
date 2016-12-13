@@ -4,10 +4,12 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
+import fairplay.gate.GateConstructor;
 import fairplay.parsers.FairplayParser;
 
 import fairplay.parsers.CircuitParser;
 import fairplay.common.CommonUtilities;
+import fairplay.gate.GateType;
 import fairplay.common.LayerComparator;
 import fairplay.common.TopoTypeComparator;
 

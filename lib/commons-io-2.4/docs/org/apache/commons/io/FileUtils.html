@@ -424,7 +424,7 @@ General file manipulation utilities.
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>static&nbsp;long</CODE></FONT></TD>
 <TD><CODE><B><A HREF="../../../../org/apache/commons/io/FileUtils.html#copyFile(java.io.File, java.io.OutputStream)">copyFile</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</A>&nbsp;input,
-         <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;output)</CODE>
+         <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;fairplay.output)</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy bytes from a <code>File</code> to an <code>OutputStream</code>.</TD>
@@ -1560,7 +1560,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/File
  An exception is thrown if the parent directory cannot be created.
 <P>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>file</CODE> - the file to open for output, must not be <code>null</code>
+<DT><B>Parameters:</B><DD><CODE>file</CODE> - the file to open for fairplay.output, must not be <code>null</code>
 <DT><B>Returns:</B><DD>a new <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/FileOutputStream.html?is-external=true" title="class or interface in java.io"><CODE>FileOutputStream</CODE></A> for the specified file
 <DT><B>Throws:</B>
 <DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - if the file object is a directory
@@ -1592,7 +1592,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/File
  An exception is thrown if the parent directory cannot be created.
 <P>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>file</CODE> - the file to open for output, must not be <code>null</code><DD><CODE>append</CODE> - if <code>true</code>, then bytes will be added to the
+<DT><B>Parameters:</B><DD><CODE>file</CODE> - the file to open for fairplay.output, must not be <code>null</code><DD><CODE>append</CODE> - if <code>true</code>, then bytes will be added to the
  end of the file rather than overwriting
 <DT><B>Returns:</B><DD>a new <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/FileOutputStream.html?is-external=true" title="class or interface in java.io"><CODE>FileOutputStream</CODE></A> for the specified file
 <DT><B>Throws:</B>
@@ -1705,7 +1705,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Co
  An example: If you want to search through all directories called
  "temp" you pass in <code>FileFilterUtils.NameFileFilter("temp")</code>
  <p>
- Another common usage of this method is find files in a directory
+ Another fairplay.common usage of this method is find files in a directory
  tree but ignoring the directories generated CVS. You can simply pass
  in <code>FileFilterUtils.makeCVSAware(null)</code>.
 <P>
@@ -1923,7 +1923,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/File
  <p>
  Returns an array of the same size as the input.
  If the input is <code>null</code>, an empty array is returned.
- If the input contains <code>null</code>, the output array contains <code>null</code> at the same
+ If the input contains <code>null</code>, the fairplay.output array contains <code>null</code> at the same
  index.
  <p>
  This method will decode the URL.
@@ -2091,7 +2091,7 @@ public static void <B>copyFile</B>(<A HREF="http://download.oracle.com/javase/6/
 copyFile</H3>
 <PRE>
 public static long <B>copyFile</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</A>&nbsp;input,
-                            <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;output)
+                            <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;fairplay.output)
                      throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
 <DD>Copy bytes from a <code>File</code> to an <code>OutputStream</code>.
@@ -2100,10 +2100,10 @@ public static long <B>copyFile</B>(<A HREF="http://download.oracle.com/javase/6/
  </p>
 <P>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>input</CODE> - the <code>File</code> to read from<DD><CODE>output</CODE> - the <code>OutputStream</code> to write to
+<DT><B>Parameters:</B><DD><CODE>input</CODE> - the <code>File</code> to read from<DD><CODE>fairplay.output</CODE> - the <code>OutputStream</code> to write to
 <DT><B>Returns:</B><DD>the number of bytes copied
 <DT><B>Throws:</B>
-<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</A></CODE> - if the input or output is null
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</A></CODE> - if the input or fairplay.output is null
 <DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - if an I/O error occurs<DT><B>Since:</B></DT>
   <DD>2.1</DD>
 </DL>

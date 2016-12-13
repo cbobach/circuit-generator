@@ -59,7 +59,7 @@ function windowTitle()
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/FileWriterWithEncoding.html" title="class in org.apache.commons.io.output"><B>PREV CLASS</B></A>&nbsp;
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/NullOutputStream.html" title="class in org.apache.commons.io.output"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-  <A HREF="../../../../../index.html?org/apache/commons/io/output/LockableFileWriter.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+  <A HREF="../../../../../index.html?org/apache/commons/io/fairplay.output/LockableFileWriter.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="LockableFileWriter.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
 &nbsp;<SCRIPT type="text/javascript">
   <!--
@@ -95,7 +95,7 @@ Class LockableFileWriter</H2>
 <PRE>
 <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
   <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">java.io.Writer</A>
-      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.io.output.LockableFileWriter</B>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.io.fairplay.output.LockableFileWriter</B>
 </PRE>
 <DL>
 <DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Flushable.html?is-external=true" title="class or interface in java.io">Flushable</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Appendable.html?is-external=true" title="class or interface in java.lang">Appendable</A></DD>
@@ -113,7 +113,7 @@ FileWriter that will create and honor lock files to allow simple
  that will use a lock file to prevent duplicate writes.
  <p>
  <b>N.B.</b> the lock file is deleted when <A HREF="../../../../../org/apache/commons/io/output/LockableFileWriter.html#close()"><CODE>close()</CODE></A> is called
- - or if the main file cannot be opened initially.
+ - or if the fairplay.main file cannot be opened initially.
  In the (unlikely) event that the lockfile cannot be deleted, 
  this is not reported, and subsequent requests using
  the same lockfile will fail.
@@ -697,7 +697,7 @@ public void <B>flush</B>()
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/FileWriterWithEncoding.html" title="class in org.apache.commons.io.output"><B>PREV CLASS</B></A>&nbsp;
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/NullOutputStream.html" title="class in org.apache.commons.io.output"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-  <A HREF="../../../../../index.html?org/apache/commons/io/output/LockableFileWriter.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+  <A HREF="../../../../../index.html?org/apache/commons/io/fairplay.output/LockableFileWriter.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="LockableFileWriter.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
 &nbsp;<SCRIPT type="text/javascript">
   <!--

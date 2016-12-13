@@ -111,11 +111,11 @@ Class TeeInputStream</H2>
 InputStream proxy that transparently writes a copy of all bytes read
  from the proxied stream to a given OutputStream. Using <A HREF="../../../../../org/apache/commons/io/input/ProxyInputStream.html#skip(long)"><CODE>ProxyInputStream.skip(long)</CODE></A>
  or <A HREF="../../../../../org/apache/commons/io/input/ProxyInputStream.html#mark(int)"><CODE>ProxyInputStream.mark(int)</CODE></A>/<A HREF="../../../../../org/apache/commons/io/input/ProxyInputStream.html#reset()"><CODE>ProxyInputStream.reset()</CODE></A> on the stream will result on some
- bytes from the input stream being skipped or duplicated in the output
+ bytes from the input stream being skipped or duplicated in the fairplay.output
  stream.
  <p>
  The proxied input stream is closed when the <A HREF="../../../../../org/apache/commons/io/input/TeeInputStream.html#close()"><CODE>close()</CODE></A> method is
- called on this proxy. It is configurable whether the associated output
+ called on this proxy. It is configurable whether the associated fairplay.output
  stream will also closed.
 <P>
 
@@ -190,7 +190,7 @@ InputStream proxy that transparently writes a copy of all bytes read
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closes the proxied input stream and, if so configured, the associated
- output stream.</TD>
+ fairplay.output stream.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -199,7 +199,7 @@ InputStream proxy that transparently writes a copy of all bytes read
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reads a single byte from the proxied input stream and writes it to
- the associated output stream.</TD>
+ the associated fairplay.output stream.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -208,7 +208,7 @@ InputStream proxy that transparently writes a copy of all bytes read
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reads bytes from the proxied input stream and writes the read bytes
- to the associated output stream.</TD>
+ to the associated fairplay.output stream.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -219,7 +219,7 @@ InputStream proxy that transparently writes a copy of all bytes read
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reads bytes from the proxied input stream and writes the read bytes
- to the associated output stream.</TD>
+ to the associated fairplay.output stream.</TD>
 </TR>
 </TABLE>
 &nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.io.input.ProxyInputStream"><!-- --></A>
@@ -261,10 +261,10 @@ public <B>TeeInputStream</B>(<A HREF="http://download.oracle.com/javase/6/docs/a
 <DL>
 <DD>Creates a TeeInputStream that proxies the given <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io"><CODE>InputStream</CODE></A>
  and copies all read bytes to the given <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io"><CODE>OutputStream</CODE></A>. The given
- output stream will not be closed when this stream gets closed.
+ fairplay.output stream will not be closed when this stream gets closed.
 <P>
 <DL>
-<DT><B>Parameters:</B><DD><CODE>input</CODE> - input stream to be proxied<DD><CODE>branch</CODE> - output stream that will receive a copy of all bytes read</DL>
+<DT><B>Parameters:</B><DD><CODE>input</CODE> - input stream to be proxied<DD><CODE>branch</CODE> - fairplay.output stream that will receive a copy of all bytes read</DL>
 </DL>
 <HR>
 
@@ -277,11 +277,11 @@ public <B>TeeInputStream</B>(<A HREF="http://download.oracle.com/javase/6/docs/a
 <DL>
 <DD>Creates a TeeInputStream that proxies the given <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io"><CODE>InputStream</CODE></A>
  and copies all read bytes to the given <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io"><CODE>OutputStream</CODE></A>. The given
- output stream will be closed when this stream gets closed if the
+ fairplay.output stream will be closed when this stream gets closed if the
  closeBranch parameter is <code>true</code>.
 <P>
 <DL>
-<DT><B>Parameters:</B><DD><CODE>input</CODE> - input stream to be proxied<DD><CODE>branch</CODE> - output stream that will receive a copy of all bytes read<DD><CODE>closeBranch</CODE> - flag for closing also the output stream when this
+<DT><B>Parameters:</B><DD><CODE>input</CODE> - input stream to be proxied<DD><CODE>branch</CODE> - fairplay.output stream that will receive a copy of all bytes read<DD><CODE>closeBranch</CODE> - flag for closing also the fairplay.output stream when this
                     stream is closed</DL>
 </DL>
 
@@ -302,7 +302,7 @@ public void <B>close</B>()
            throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
 <DD>Closes the proxied input stream and, if so configured, the associated
- output stream. An exception thrown from one stream will not prevent
+ fairplay.output stream. An exception thrown from one stream will not prevent
  closing of the other stream.
 <P>
 <DD><DL>
@@ -323,7 +323,7 @@ public int <B>read</B>()
          throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
 <DD>Reads a single byte from the proxied input stream and writes it to
- the associated output stream.
+ the associated fairplay.output stream.
 <P>
 <DD><DL>
 <DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/io/input/ProxyInputStream.html#read()">read</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/io/input/ProxyInputStream.html" title="class in org.apache.commons.io.input">ProxyInputStream</A></CODE></DL>
@@ -346,7 +346,7 @@ public int <B>read</B>(byte[]&nbsp;bts,
          throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
 <DD>Reads bytes from the proxied input stream and writes the read bytes
- to the associated output stream.
+ to the associated fairplay.output stream.
 <P>
 <DD><DL>
 <DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/io/input/ProxyInputStream.html#read(byte[], int, int)">read</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/io/input/ProxyInputStream.html" title="class in org.apache.commons.io.input">ProxyInputStream</A></CODE></DL>
@@ -367,7 +367,7 @@ public int <B>read</B>(byte[]&nbsp;bts)
          throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
 <DD>Reads bytes from the proxied input stream and writes the read bytes
- to the associated output stream.
+ to the associated fairplay.output stream.
 <P>
 <DD><DL>
 <DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/io/input/ProxyInputStream.html#read(byte[])">read</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/io/input/ProxyInputStream.html" title="class in org.apache.commons.io.input">ProxyInputStream</A></CODE></DL>

@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import fairplay.gate.GateConstructor;
 import fairplay.parsers.CircuitParser;
 import fairplay.common.InputGateType;
 

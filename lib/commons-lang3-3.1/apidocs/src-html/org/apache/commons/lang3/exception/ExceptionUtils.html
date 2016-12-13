@@ -423,13 +423,13 @@
 <FONT color="green">420</FONT>         * Then it prints the wrapped exception and continues with stack frames<a name="line.420"></a>
 <FONT color="green">421</FONT>         * until the wrapper exception is caught and wrapped again, etc.&lt;/p&gt;<a name="line.421"></a>
 <FONT color="green">422</FONT>         *<a name="line.422"></a>
-<FONT color="green">423</FONT>         * &lt;p&gt;The output of this method is consistent across JDK versions.<a name="line.423"></a>
+<FONT color="green">423</FONT>         * &lt;p&gt;The fairplay.output of this method is consistent across JDK versions.<a name="line.423"></a>
 <FONT color="green">424</FONT>         * Note that this is the opposite order to the JDK1.4 display.&lt;/p&gt;<a name="line.424"></a>
 <FONT color="green">425</FONT>         *<a name="line.425"></a>
 <FONT color="green">426</FONT>         * &lt;p&gt;The method is equivalent to &lt;code&gt;printStackTrace&lt;/code&gt; for throwables<a name="line.426"></a>
 <FONT color="green">427</FONT>         * that don't have nested causes.&lt;/p&gt;<a name="line.427"></a>
 <FONT color="green">428</FONT>         *<a name="line.428"></a>
-<FONT color="green">429</FONT>         * @param throwable  the throwable to output<a name="line.429"></a>
+<FONT color="green">429</FONT>         * @param throwable  the throwable to fairplay.output<a name="line.429"></a>
 <FONT color="green">430</FONT>         * @since 2.0<a name="line.430"></a>
 <FONT color="green">431</FONT>         */<a name="line.431"></a>
 <FONT color="green">432</FONT>        public static void printRootCauseStackTrace(Throwable throwable) {<a name="line.432"></a>
@@ -444,14 +444,14 @@
 <FONT color="green">441</FONT>         * Then it prints the wrapped exception and continues with stack frames<a name="line.441"></a>
 <FONT color="green">442</FONT>         * until the wrapper exception is caught and wrapped again, etc.&lt;/p&gt;<a name="line.442"></a>
 <FONT color="green">443</FONT>         *<a name="line.443"></a>
-<FONT color="green">444</FONT>         * &lt;p&gt;The output of this method is consistent across JDK versions.<a name="line.444"></a>
+<FONT color="green">444</FONT>         * &lt;p&gt;The fairplay.output of this method is consistent across JDK versions.<a name="line.444"></a>
 <FONT color="green">445</FONT>         * Note that this is the opposite order to the JDK1.4 display.&lt;/p&gt;<a name="line.445"></a>
 <FONT color="green">446</FONT>         *<a name="line.446"></a>
 <FONT color="green">447</FONT>         * &lt;p&gt;The method is equivalent to &lt;code&gt;printStackTrace&lt;/code&gt; for throwables<a name="line.447"></a>
 <FONT color="green">448</FONT>         * that don't have nested causes.&lt;/p&gt;<a name="line.448"></a>
 <FONT color="green">449</FONT>         *<a name="line.449"></a>
-<FONT color="green">450</FONT>         * @param throwable  the throwable to output, may be null<a name="line.450"></a>
-<FONT color="green">451</FONT>         * @param stream  the stream to output to, may not be null<a name="line.451"></a>
+<FONT color="green">450</FONT>         * @param throwable  the throwable to fairplay.output, may be null<a name="line.450"></a>
+<FONT color="green">451</FONT>         * @param stream  the stream to fairplay.output to, may not be null<a name="line.451"></a>
 <FONT color="green">452</FONT>         * @throws IllegalArgumentException if the stream is &lt;code&gt;null&lt;/code&gt;<a name="line.452"></a>
 <FONT color="green">453</FONT>         * @since 2.0<a name="line.453"></a>
 <FONT color="green">454</FONT>         */<a name="line.454"></a>
@@ -477,14 +477,14 @@
 <FONT color="green">474</FONT>         * Then it prints the wrapped exception and continues with stack frames<a name="line.474"></a>
 <FONT color="green">475</FONT>         * until the wrapper exception is caught and wrapped again, etc.&lt;/p&gt;<a name="line.475"></a>
 <FONT color="green">476</FONT>         *<a name="line.476"></a>
-<FONT color="green">477</FONT>         * &lt;p&gt;The output of this method is consistent across JDK versions.<a name="line.477"></a>
+<FONT color="green">477</FONT>         * &lt;p&gt;The fairplay.output of this method is consistent across JDK versions.<a name="line.477"></a>
 <FONT color="green">478</FONT>         * Note that this is the opposite order to the JDK1.4 display.&lt;/p&gt;<a name="line.478"></a>
 <FONT color="green">479</FONT>         *<a name="line.479"></a>
 <FONT color="green">480</FONT>         * &lt;p&gt;The method is equivalent to &lt;code&gt;printStackTrace&lt;/code&gt; for throwables<a name="line.480"></a>
 <FONT color="green">481</FONT>         * that don't have nested causes.&lt;/p&gt;<a name="line.481"></a>
 <FONT color="green">482</FONT>         *<a name="line.482"></a>
-<FONT color="green">483</FONT>         * @param throwable  the throwable to output, may be null<a name="line.483"></a>
-<FONT color="green">484</FONT>         * @param writer  the writer to output to, may not be null<a name="line.484"></a>
+<FONT color="green">483</FONT>         * @param throwable  the throwable to fairplay.output, may be null<a name="line.483"></a>
+<FONT color="green">484</FONT>         * @param writer  the writer to fairplay.output to, may not be null<a name="line.484"></a>
 <FONT color="green">485</FONT>         * @throws IllegalArgumentException if the writer is &lt;code&gt;null&lt;/code&gt;<a name="line.485"></a>
 <FONT color="green">486</FONT>         * @since 2.0<a name="line.486"></a>
 <FONT color="green">487</FONT>         */<a name="line.487"></a>
@@ -507,7 +507,7 @@
 <FONT color="green">504</FONT>         * &lt;p&gt;Creates a compact stack trace for the root cause of the supplied<a name="line.504"></a>
 <FONT color="green">505</FONT>         * &lt;code&gt;Throwable&lt;/code&gt;.&lt;/p&gt;<a name="line.505"></a>
 <FONT color="green">506</FONT>         *<a name="line.506"></a>
-<FONT color="green">507</FONT>         * &lt;p&gt;The output of this method is consistent across JDK versions.<a name="line.507"></a>
+<FONT color="green">507</FONT>         * &lt;p&gt;The fairplay.output of this method is consistent across JDK versions.<a name="line.507"></a>
 <FONT color="green">508</FONT>         * It consists of the root exception followed by each of its wrapping<a name="line.508"></a>
 <FONT color="green">509</FONT>         * exceptions separated by '[wrapped]'. Note that this is the opposite<a name="line.509"></a>
 <FONT color="green">510</FONT>         * order to the JDK1.4 display.&lt;/p&gt;<a name="line.510"></a>
@@ -543,7 +543,7 @@
 <FONT color="green">540</FONT>        }<a name="line.540"></a>
 <FONT color="green">541</FONT>    <a name="line.541"></a>
 <FONT color="green">542</FONT>        /**<a name="line.542"></a>
-<FONT color="green">543</FONT>         * &lt;p&gt;Removes common frames from the cause trace given the two stack traces.&lt;/p&gt;<a name="line.543"></a>
+<FONT color="green">543</FONT>         * &lt;p&gt;Removes fairplay.common frames from the cause trace given the two stack traces.&lt;/p&gt;<a name="line.543"></a>
 <FONT color="green">544</FONT>         *<a name="line.544"></a>
 <FONT color="green">545</FONT>         * @param causeFrames  stack trace of a cause throwable<a name="line.545"></a>
 <FONT color="green">546</FONT>         * @param wrapperFrames  stack trace of a wrapper throwable<a name="line.546"></a>

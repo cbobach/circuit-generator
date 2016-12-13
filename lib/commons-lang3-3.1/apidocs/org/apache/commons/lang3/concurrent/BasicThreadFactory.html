@@ -120,7 +120,7 @@ Class BasicThreadFactory</H2>
  <li>A name pattern for the threads created by this factory can be specified.
  This is often useful if an application uses multiple executor services for
  different purposes. If the names of the threads used by these services have
- meaningful names, log output or exception traces can be much easier to read.
+ meaningful names, log fairplay.output or exception traces can be much easier to read.
  Naming patterns are <em>format strings</em> as used by the <code>String.format()</code> method. The string can contain the place holder <code>%d</code>
  which will be replaced by the number of the current thread (<code>ThreadFactoryImpl</code> keeps a counter of the threads it has already created).
  For instance, the naming pattern <code>"My %d. worker thread"</code> will result

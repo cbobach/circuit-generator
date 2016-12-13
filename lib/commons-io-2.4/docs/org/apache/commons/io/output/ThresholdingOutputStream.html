@@ -59,7 +59,7 @@ function windowTitle()
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/TeeOutputStream.html" title="class in org.apache.commons.io.output"><B>PREV CLASS</B></A>&nbsp;
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-  <A HREF="../../../../../index.html?org/apache/commons/io/output/ThresholdingOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+  <A HREF="../../../../../index.html?org/apache/commons/io/fairplay.output/ThresholdingOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="ThresholdingOutputStream.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
 &nbsp;<SCRIPT type="text/javascript">
   <!--
@@ -95,7 +95,7 @@ Class ThresholdingOutputStream</H2>
 <PRE>
 <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
   <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">java.io.OutputStream</A>
-      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.io.output.ThresholdingOutputStream</B>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.io.fairplay.output.ThresholdingOutputStream</B>
 </PRE>
 <DL>
 <DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Flushable.html?is-external=true" title="class or interface in java.io">Flushable</A></DD>
@@ -109,13 +109,13 @@ Class ThresholdingOutputStream</H2>
 </PRE>
 
 <P>
-An output stream which triggers an event when a specified number of bytes of
+An fairplay.output stream which triggers an event when a specified number of bytes of
  data have been written to it. The event can be used, for example, to throw
  an exception if a maximum has been reached, or to switch the underlying
  stream type when the threshold is exceeded.
  <p>
  This class overrides all <code>OutputStream</code> methods. However, these
- overrides ultimately call the corresponding methods in the underlying output
+ overrides ultimately call the corresponding methods in the underlying fairplay.output
  stream implementation.
  <p>
  NOTE: This implementation may trigger the event <em>before</em> the threshold
@@ -172,7 +172,7 @@ An output stream which triggers an event when a specified number of bytes of
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html#close()">close</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closes this output stream and releases any system resources associated
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closes this fairplay.output stream and releases any system resources associated
  with this stream.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -181,7 +181,7 @@ An output stream which triggers an event when a specified number of bytes of
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html#flush()">flush</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flushes this output stream and forces any buffered output bytes to be
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flushes this fairplay.output stream and forces any buffered fairplay.output bytes to be
  written out.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -190,7 +190,7 @@ An output stream which triggers an event when a specified number of bytes of
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html#getByteCount()">getByteCount</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the number of bytes that have been written to this output stream.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the number of bytes that have been written to this fairplay.output stream.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -198,7 +198,7 @@ An output stream which triggers an event when a specified number of bytes of
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html#getStream()">getStream</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the underlying output stream, to which the corresponding
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the underlying fairplay.output stream, to which the corresponding
  <code>OutputStream</code> methods in this class will ultimately delegate.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -216,7 +216,7 @@ An output stream which triggers an event when a specified number of bytes of
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Determines whether or not the configured threshold has been exceeded for
- this output stream.</TD>
+ this fairplay.output stream.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -242,7 +242,7 @@ An output stream which triggers an event when a specified number of bytes of
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes <code>b.length</code> bytes from the specified byte array to this
- output stream.</TD>
+ fairplay.output stream.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -253,7 +253,7 @@ An output stream which triggers an event when a specified number of bytes of
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes <code>len</code> bytes from the specified byte array starting at
- offset <code>off</code> to this output stream.</TD>
+ offset <code>off</code> to this fairplay.output stream.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -261,7 +261,7 @@ An output stream which triggers an event when a specified number of bytes of
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html#write(int)">write</A></B>(int&nbsp;b)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes the specified byte to this output stream.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes the specified byte to this fairplay.output stream.</TD>
 </TR>
 </TABLE>
 &nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
@@ -314,7 +314,7 @@ write</H3>
 public void <B>write</B>(int&nbsp;b)
            throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
-<DD>Writes the specified byte to this output stream.
+<DD>Writes the specified byte to this fairplay.output stream.
 <P>
 <DD><DL>
 <DT><B>Specified by:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true#write(int)" title="class or interface in java.io">write</A></CODE> in class <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A></CODE></DL>
@@ -334,7 +334,7 @@ public void <B>write</B>(byte[]&nbsp;b)
            throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
 <DD>Writes <code>b.length</code> bytes from the specified byte array to this
- output stream.
+ fairplay.output stream.
 <P>
 <DD><DL>
 <DT><B>Overrides:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true#write(byte[])" title="class or interface in java.io">write</A></CODE> in class <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A></CODE></DL>
@@ -356,7 +356,7 @@ public void <B>write</B>(byte[]&nbsp;b,
            throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
 <DD>Writes <code>len</code> bytes from the specified byte array starting at
- offset <code>off</code> to this output stream.
+ offset <code>off</code> to this fairplay.output stream.
 <P>
 <DD><DL>
 <DT><B>Overrides:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true#write(byte[], int, int)" title="class or interface in java.io">write</A></CODE> in class <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A></CODE></DL>
@@ -375,7 +375,7 @@ flush</H3>
 public void <B>flush</B>()
            throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
-<DD>Flushes this output stream and forces any buffered output bytes to be
+<DD>Flushes this fairplay.output stream and forces any buffered fairplay.output bytes to be
  written out.
 <P>
 <DD><DL>
@@ -395,7 +395,7 @@ close</H3>
 public void <B>close</B>()
            throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
-<DD>Closes this output stream and releases any system resources associated
+<DD>Closes this fairplay.output stream and releases any system resources associated
  with this stream.
 <P>
 <DD><DL>
@@ -428,7 +428,7 @@ getByteCount</H3>
 <PRE>
 public long <B>getByteCount</B>()</PRE>
 <DL>
-<DD>Returns the number of bytes that have been written to this output stream.
+<DD>Returns the number of bytes that have been written to this fairplay.output stream.
 <P>
 <DD><DL>
 
@@ -443,7 +443,7 @@ isThresholdExceeded</H3>
 public boolean <B>isThresholdExceeded</B>()</PRE>
 <DL>
 <DD>Determines whether or not the configured threshold has been exceeded for
- this output stream.
+ this fairplay.output stream.
 <P>
 <DD><DL>
 
@@ -465,7 +465,7 @@ protected void <B>checkThreshold</B>(int&nbsp;count)
 <P>
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>count</CODE> - The number of bytes about to be written to the underlying
-              output stream.
+              fairplay.output stream.
 <DT><B>Throws:</B>
 <DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - if an error occurs.</DL>
 </DD>
@@ -492,12 +492,12 @@ getStream</H3>
 protected abstract <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A> <B>getStream</B>()
                                    throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
-<DD>Returns the underlying output stream, to which the corresponding
+<DD>Returns the underlying fairplay.output stream, to which the corresponding
  <code>OutputStream</code> methods in this class will ultimately delegate.
 <P>
 <DD><DL>
 
-<DT><B>Returns:</B><DD>The underlying output stream.
+<DT><B>Returns:</B><DD>The underlying fairplay.output stream.
 <DT><B>Throws:</B>
 <DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - if an error occurs.</DL>
 </DD>
@@ -512,7 +512,7 @@ protected abstract void <B>thresholdReached</B>()
 <DL>
 <DD>Indicates that the configured threshold has been reached, and that a
  subclass should take whatever action necessary on this event. This may
- include changing the underlying output stream.
+ include changing the underlying fairplay.output stream.
 <P>
 <DD><DL>
 
@@ -554,7 +554,7 @@ protected abstract void <B>thresholdReached</B>()
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/TeeOutputStream.html" title="class in org.apache.commons.io.output"><B>PREV CLASS</B></A>&nbsp;
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-  <A HREF="../../../../../index.html?org/apache/commons/io/output/ThresholdingOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+  <A HREF="../../../../../index.html?org/apache/commons/io/fairplay.output/ThresholdingOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="ThresholdingOutputStream.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
 &nbsp;<SCRIPT type="text/javascript">
   <!--

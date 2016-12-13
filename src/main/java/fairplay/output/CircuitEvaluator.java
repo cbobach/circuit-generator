@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import fairplay.common.BitString;
+import fairplay.Converter;
 import fairplay.gate.GateConstructor;
 
 /**

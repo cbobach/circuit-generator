@@ -59,7 +59,7 @@ function windowTitle()
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/CountingOutputStream.html" title="class in org.apache.commons.io.output"><B>PREV CLASS</B></A>&nbsp;
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/DemuxOutputStream.html" title="class in org.apache.commons.io.output"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-  <A HREF="../../../../../index.html?org/apache/commons/io/output/DeferredFileOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+  <A HREF="../../../../../index.html?org/apache/commons/io/fairplay.output/DeferredFileOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="DeferredFileOutputStream.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
 &nbsp;<SCRIPT type="text/javascript">
   <!--
@@ -95,8 +95,8 @@ Class DeferredFileOutputStream</H2>
 <PRE>
 <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
   <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">java.io.OutputStream</A>
-      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html" title="class in org.apache.commons.io.output">org.apache.commons.io.output.ThresholdingOutputStream</A>
-          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.io.output.DeferredFileOutputStream</B>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html" title="class in org.apache.commons.io.output">org.apache.commons.io.fairplay.output.ThresholdingOutputStream</A>
+          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.io.fairplay.output.DeferredFileOutputStream</B>
 </PRE>
 <DL>
 <DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Flushable.html?is-external=true" title="class or interface in java.io">Flushable</A></DD>
@@ -107,7 +107,7 @@ Class DeferredFileOutputStream</H2>
 </PRE>
 
 <P>
-An output stream which will retain data in memory until a specified
+An fairplay.output stream which will retain data in memory until a specified
  threshold is reached, and only then commit it to disk. If the stream is
  closed before the threshold is reached, the data will not be written to
  disk at all.
@@ -169,7 +169,7 @@ An output stream which will retain data in memory until a specified
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/io/output/DeferredFileOutputStream.html#close()">close</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closes underlying output stream, and mark this as closed</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closes underlying fairplay.output stream, and mark this as closed</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -177,7 +177,7 @@ An output stream which will retain data in memory until a specified
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/io/output/DeferredFileOutputStream.html#getData()">getData</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the data for this output stream as an array of bytes, assuming
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the data for this fairplay.output stream as an array of bytes, assuming
  that the data has been retained in memory.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -186,7 +186,7 @@ An output stream which will retain data in memory until a specified
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/io/output/DeferredFileOutputStream.html#getFile()">getFile</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns either the output file specified in the constructor or
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns either the fairplay.output file specified in the constructor or
  the temporary file created or null.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -195,7 +195,7 @@ An output stream which will retain data in memory until a specified
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/io/output/DeferredFileOutputStream.html#getStream()">getStream</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the current output stream.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the current fairplay.output stream.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -203,7 +203,7 @@ An output stream which will retain data in memory until a specified
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/io/output/DeferredFileOutputStream.html#isInMemory()">isInMemory</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Determines whether or not the data for this output stream has been
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Determines whether or not the data for this fairplay.output stream has been
  retained in memory.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -212,7 +212,7 @@ An output stream which will retain data in memory until a specified
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/io/output/DeferredFileOutputStream.html#thresholdReached()">thresholdReached</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Switches the underlying output stream from a memory based stream to one
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Switches the underlying fairplay.output stream from a memory based stream to one
  that is backed by disk.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -221,14 +221,14 @@ An output stream which will retain data in memory until a specified
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/io/output/DeferredFileOutputStream.html#writeTo(java.io.OutputStream)">writeTo</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;out)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes the data from this output stream to the specified output stream,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes the data from this fairplay.output stream to the specified fairplay.output stream,
  after it has been closed.</TD>
 </TR>
 </TABLE>
 &nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.io.output.ThresholdingOutputStream"><!-- --></A>
 <TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
 <TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
-<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.io.output.<A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html" title="class in org.apache.commons.io.output">ThresholdingOutputStream</A></B></TH>
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.io.fairplay.output.<A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html" title="class in org.apache.commons.io.output">ThresholdingOutputStream</A></B></TH>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD><CODE><A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html#checkThreshold(int)">checkThreshold</A>, <A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html#flush()">flush</A>, <A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html#getByteCount()">getByteCount</A>, <A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html#getThreshold()">getThreshold</A>, <A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html#isThresholdExceeded()">isThresholdExceeded</A>, <A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html#resetByteCount()">resetByteCount</A>, <A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html#write(byte[])">write</A>, <A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html#write(byte[], int, int)">write</A>, <A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html#write(int)">write</A></CODE></TD>
@@ -303,7 +303,7 @@ getStream</H3>
 protected <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A> <B>getStream</B>()
                           throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
-<DD>Returns the current output stream. This may be memory based or disk
+<DD>Returns the current fairplay.output stream. This may be memory based or disk
  based, depending on the current state with respect to the threshold.
 <P>
 <DD><DL>
@@ -311,7 +311,7 @@ protected <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputSt
 </DD>
 <DD><DL>
 
-<DT><B>Returns:</B><DD>The underlying output stream.
+<DT><B>Returns:</B><DD>The underlying fairplay.output stream.
 <DT><B>Throws:</B>
 <DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - if an error occurs.</DL>
 </DD>
@@ -324,7 +324,7 @@ thresholdReached</H3>
 protected void <B>thresholdReached</B>()
                          throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
-<DD>Switches the underlying output stream from a memory based stream to one
+<DD>Switches the underlying fairplay.output stream from a memory based stream to one
  that is backed by disk. This is the point at which we realise that too
  much data is being written to keep in memory, so we elect to switch to
  disk-based storage.
@@ -345,7 +345,7 @@ isInMemory</H3>
 <PRE>
 public boolean <B>isInMemory</B>()</PRE>
 <DL>
-<DD>Determines whether or not the data for this output stream has been
+<DD>Determines whether or not the data for this fairplay.output stream has been
  retained in memory.
 <P>
 <DD><DL>
@@ -361,13 +361,13 @@ getData</H3>
 <PRE>
 public byte[] <B>getData</B>()</PRE>
 <DL>
-<DD>Returns the data for this output stream as an array of bytes, assuming
+<DD>Returns the data for this fairplay.output stream as an array of bytes, assuming
  that the data has been retained in memory. If the data was written to
  disk, this method returns <code>null</code>.
 <P>
 <DD><DL>
 
-<DT><B>Returns:</B><DD>The data for this output stream, or <code>null</code> if no such
+<DT><B>Returns:</B><DD>The data for this fairplay.output stream, or <code>null</code> if no such
          data is available.</DL>
 </DD>
 </DL>
@@ -378,11 +378,11 @@ getFile</H3>
 <PRE>
 public <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</A> <B>getFile</B>()</PRE>
 <DL>
-<DD>Returns either the output file specified in the constructor or
+<DD>Returns either the fairplay.output file specified in the constructor or
  the temporary file created or null.
  <p>
  If the constructor specifying the file is used then it returns that
- same output file, even when threshold has not been reached.
+ same fairplay.output file, even when threshold has not been reached.
  <p>
  If constructor specifying a temporary file prefix/suffix is used
  then the temporary file created once the threshold is reached is returned
@@ -390,7 +390,7 @@ public <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/File.html?i
 <P>
 <DD><DL>
 
-<DT><B>Returns:</B><DD>The file for this output stream, or <code>null</code> if no such
+<DT><B>Returns:</B><DD>The file for this fairplay.output stream, or <code>null</code> if no such
          file exists.</DL>
 </DD>
 </DL>
@@ -402,7 +402,7 @@ close</H3>
 public void <B>close</B>()
            throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
-<DD>Closes underlying output stream, and mark this as closed
+<DD>Closes underlying fairplay.output stream, and mark this as closed
 <P>
 <DD><DL>
 <DT><B>Specified by:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Closeable.html?is-external=true#close()" title="class or interface in java.io">close</A></CODE> in interface <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html#close()">close</A></CODE> in class <CODE><A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html" title="class in org.apache.commons.io.output">ThresholdingOutputStream</A></CODE></DL>
@@ -421,11 +421,11 @@ writeTo</H3>
 public void <B>writeTo</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;out)
              throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
-<DD>Writes the data from this output stream to the specified output stream,
+<DD>Writes the data from this fairplay.output stream to the specified fairplay.output stream,
  after it has been closed.
 <P>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>out</CODE> - output stream to write to.
+<DT><B>Parameters:</B><DD><CODE>out</CODE> - fairplay.output stream to write to.
 <DT><B>Throws:</B>
 <DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - if this stream is not yet closed or an error occurs.</DL>
 </DD>
@@ -464,7 +464,7 @@ public void <B>writeTo</B>(<A HREF="http://download.oracle.com/javase/6/docs/api
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/CountingOutputStream.html" title="class in org.apache.commons.io.output"><B>PREV CLASS</B></A>&nbsp;
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/DemuxOutputStream.html" title="class in org.apache.commons.io.output"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-  <A HREF="../../../../../index.html?org/apache/commons/io/output/DeferredFileOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+  <A HREF="../../../../../index.html?org/apache/commons/io/fairplay.output/DeferredFileOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="DeferredFileOutputStream.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
 &nbsp;<SCRIPT type="text/javascript">
   <!--

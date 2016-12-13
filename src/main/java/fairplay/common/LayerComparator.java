@@ -1,5 +1,7 @@
 package fairplay.common;
 
+import fairplay.gate.GateConstructor;
+
 import java.util.Comparator;
 
 public class LayerComparator implements Comparator<GateConstructor> {

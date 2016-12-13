@@ -2,6 +2,7 @@ package fairplay.converters;
 import java.util.ArrayList;
 import java.util.List;
 
+import fairplay.gate.GateConstructor;
 import fairplay.parsers.FairplayParser;
 
 import fairplay.parsers.CircuitParser;

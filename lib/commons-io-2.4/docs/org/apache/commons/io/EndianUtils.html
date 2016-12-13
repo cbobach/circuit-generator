@@ -321,7 +321,7 @@ Utility code for dealing with different endian systems.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>static&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../org/apache/commons/io/EndianUtils.html#writeSwappedDouble(java.io.OutputStream, double)">writeSwappedDouble</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;output,
+<TD><CODE><B><A HREF="../../../../org/apache/commons/io/EndianUtils.html#writeSwappedDouble(java.io.OutputStream, double)">writeSwappedDouble</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;fairplay.output,
                    double&nbsp;value)</CODE>
 
 <BR>
@@ -340,7 +340,7 @@ Utility code for dealing with different endian systems.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>static&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../org/apache/commons/io/EndianUtils.html#writeSwappedFloat(java.io.OutputStream, float)">writeSwappedFloat</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;output,
+<TD><CODE><B><A HREF="../../../../org/apache/commons/io/EndianUtils.html#writeSwappedFloat(java.io.OutputStream, float)">writeSwappedFloat</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;fairplay.output,
                   float&nbsp;value)</CODE>
 
 <BR>
@@ -359,7 +359,7 @@ Utility code for dealing with different endian systems.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>static&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../org/apache/commons/io/EndianUtils.html#writeSwappedInteger(java.io.OutputStream, int)">writeSwappedInteger</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;output,
+<TD><CODE><B><A HREF="../../../../org/apache/commons/io/EndianUtils.html#writeSwappedInteger(java.io.OutputStream, int)">writeSwappedInteger</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;fairplay.output,
                     int&nbsp;value)</CODE>
 
 <BR>
@@ -378,7 +378,7 @@ Utility code for dealing with different endian systems.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>static&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../org/apache/commons/io/EndianUtils.html#writeSwappedLong(java.io.OutputStream, long)">writeSwappedLong</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;output,
+<TD><CODE><B><A HREF="../../../../org/apache/commons/io/EndianUtils.html#writeSwappedLong(java.io.OutputStream, long)">writeSwappedLong</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;fairplay.output,
                  long&nbsp;value)</CODE>
 
 <BR>
@@ -397,7 +397,7 @@ Utility code for dealing with different endian systems.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>static&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../org/apache/commons/io/EndianUtils.html#writeSwappedShort(java.io.OutputStream, short)">writeSwappedShort</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;output,
+<TD><CODE><B><A HREF="../../../../org/apache/commons/io/EndianUtils.html#writeSwappedShort(java.io.OutputStream, short)">writeSwappedShort</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;fairplay.output,
                   short&nbsp;value)</CODE>
 
 <BR>
@@ -712,7 +712,7 @@ public static double <B>readSwappedDouble</B>(byte[]&nbsp;data,
 <A NAME="writeSwappedShort(java.io.OutputStream, short)"><!-- --></A><H3>
 writeSwappedShort</H3>
 <PRE>
-public static void <B>writeSwappedShort</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;output,
+public static void <B>writeSwappedShort</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;fairplay.output,
                                      short&nbsp;value)
                               throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
@@ -720,7 +720,7 @@ public static void <B>writeSwappedShort</B>(<A HREF="http://download.oracle.com/
  converted to the opposed endian system while writing.
 <P>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>output</CODE> - target OutputStream<DD><CODE>value</CODE> - value to write
+<DT><B>Parameters:</B><DD><CODE>fairplay.output</CODE> - target OutputStream<DD><CODE>value</CODE> - value to write
 <DT><B>Throws:</B>
 <DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - in case of an I/O problem</DL>
 </DD>
@@ -766,7 +766,7 @@ public static int <B>readSwappedUnsignedShort</B>(<A HREF="http://download.oracl
 <A NAME="writeSwappedInteger(java.io.OutputStream, int)"><!-- --></A><H3>
 writeSwappedInteger</H3>
 <PRE>
-public static void <B>writeSwappedInteger</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;output,
+public static void <B>writeSwappedInteger</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;fairplay.output,
                                        int&nbsp;value)
                                 throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
@@ -774,7 +774,7 @@ public static void <B>writeSwappedInteger</B>(<A HREF="http://download.oracle.co
  converted to the opposed endian system while writing.
 <P>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>output</CODE> - target OutputStream<DD><CODE>value</CODE> - value to write
+<DT><B>Parameters:</B><DD><CODE>fairplay.output</CODE> - target OutputStream<DD><CODE>value</CODE> - value to write
 <DT><B>Throws:</B>
 <DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - in case of an I/O problem</DL>
 </DD>
@@ -820,7 +820,7 @@ public static long <B>readSwappedUnsignedInteger</B>(<A HREF="http://download.or
 <A NAME="writeSwappedLong(java.io.OutputStream, long)"><!-- --></A><H3>
 writeSwappedLong</H3>
 <PRE>
-public static void <B>writeSwappedLong</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;output,
+public static void <B>writeSwappedLong</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;fairplay.output,
                                     long&nbsp;value)
                              throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
@@ -828,7 +828,7 @@ public static void <B>writeSwappedLong</B>(<A HREF="http://download.oracle.com/j
  converted to the opposed endian system while writing.
 <P>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>output</CODE> - target OutputStream<DD><CODE>value</CODE> - value to write
+<DT><B>Parameters:</B><DD><CODE>fairplay.output</CODE> - target OutputStream<DD><CODE>value</CODE> - value to write
 <DT><B>Throws:</B>
 <DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - in case of an I/O problem</DL>
 </DD>
@@ -856,7 +856,7 @@ public static long <B>readSwappedLong</B>(<A HREF="http://download.oracle.com/ja
 <A NAME="writeSwappedFloat(java.io.OutputStream, float)"><!-- --></A><H3>
 writeSwappedFloat</H3>
 <PRE>
-public static void <B>writeSwappedFloat</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;output,
+public static void <B>writeSwappedFloat</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;fairplay.output,
                                      float&nbsp;value)
                               throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
@@ -864,7 +864,7 @@ public static void <B>writeSwappedFloat</B>(<A HREF="http://download.oracle.com/
  converted to the opposed endian system while writing.
 <P>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>output</CODE> - target OutputStream<DD><CODE>value</CODE> - value to write
+<DT><B>Parameters:</B><DD><CODE>fairplay.output</CODE> - target OutputStream<DD><CODE>value</CODE> - value to write
 <DT><B>Throws:</B>
 <DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - in case of an I/O problem</DL>
 </DD>
@@ -892,7 +892,7 @@ public static float <B>readSwappedFloat</B>(<A HREF="http://download.oracle.com/
 <A NAME="writeSwappedDouble(java.io.OutputStream, double)"><!-- --></A><H3>
 writeSwappedDouble</H3>
 <PRE>
-public static void <B>writeSwappedDouble</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;output,
+public static void <B>writeSwappedDouble</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A>&nbsp;fairplay.output,
                                       double&nbsp;value)
                                throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
@@ -900,7 +900,7 @@ public static void <B>writeSwappedDouble</B>(<A HREF="http://download.oracle.com
  converted to the opposed endian system while writing.
 <P>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>output</CODE> - target OutputStream<DD><CODE>value</CODE> - value to write
+<DT><B>Parameters:</B><DD><CODE>fairplay.output</CODE> - target OutputStream<DD><CODE>value</CODE> - value to write
 <DT><B>Throws:</B>
 <DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - in case of an I/O problem</DL>
 </DD>

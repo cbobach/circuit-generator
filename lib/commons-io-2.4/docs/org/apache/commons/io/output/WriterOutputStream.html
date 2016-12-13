@@ -59,7 +59,7 @@ function windowTitle()
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html" title="class in org.apache.commons.io.output"><B>PREV CLASS</B></A>&nbsp;
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/XmlStreamWriter.html" title="class in org.apache.commons.io.output"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-  <A HREF="../../../../../index.html?org/apache/commons/io/output/WriterOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+  <A HREF="../../../../../index.html?org/apache/commons/io/fairplay.output/WriterOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="WriterOutputStream.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
 &nbsp;<SCRIPT type="text/javascript">
   <!--
@@ -95,7 +95,7 @@ Class WriterOutputStream</H2>
 <PRE>
 <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
   <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">java.io.OutputStream</A>
-      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.io.output.WriterOutputStream</B>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.io.fairplay.output.WriterOutputStream</B>
 </PRE>
 <DL>
 <DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Flushable.html?is-external=true" title="class or interface in java.io">Flushable</A></DD>
@@ -112,7 +112,7 @@ Class WriterOutputStream</H2>
  <A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html?is-external=true" title="class or interface in java.nio.charset"><CODE>CharsetDecoder</CODE></A> object, guaranteeing that all charset
  encodings supported by the JRE are handled correctly.
  <p>
- The output of the <A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html?is-external=true" title="class or interface in java.nio.charset"><CODE>CharsetDecoder</CODE></A> is buffered using a fixed size buffer.
+ The fairplay.output of the <A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html?is-external=true" title="class or interface in java.nio.charset"><CODE>CharsetDecoder</CODE></A> is buffered using a fixed size buffer.
  This implies that the data is written to the underlying <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io"><CODE>Writer</CODE></A> in chunks
  that are no larger than the size of this buffer. By default, the buffer is
  flushed only when it overflows or when <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html#flush()"><CODE>flush()</CODE></A> or <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html#close()"><CODE>close()</CODE></A>
@@ -168,14 +168,14 @@ Class WriterOutputStream</H2>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a new <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><CODE>WriterOutputStream</CODE></A> that uses the default character encoding
- and with a default output buffer size of 1024 characters.</TD>
+ and with a default fairplay.output buffer size of 1024 characters.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html#WriterOutputStream(java.io.Writer, java.nio.charset.Charset)">WriterOutputStream</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</A>&nbsp;writer,
                    <A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html?is-external=true" title="class or interface in java.nio.charset">Charset</A>&nbsp;charset)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a new <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><CODE>WriterOutputStream</CODE></A> with a default output buffer size of
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a new <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><CODE>WriterOutputStream</CODE></A> with a default fairplay.output buffer size of
  1024 characters.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -183,7 +183,7 @@ Class WriterOutputStream</H2>
                    <A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html?is-external=true" title="class or interface in java.nio.charset">CharsetDecoder</A>&nbsp;decoder)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a new <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><CODE>WriterOutputStream</CODE></A> with a default output buffer size of
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a new <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><CODE>WriterOutputStream</CODE></A> with a default fairplay.output buffer size of
  1024 characters.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -209,7 +209,7 @@ Class WriterOutputStream</H2>
                    <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;charsetName)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a new <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><CODE>WriterOutputStream</CODE></A> with a default output buffer size of
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a new <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><CODE>WriterOutputStream</CODE></A> with a default fairplay.output buffer size of
  1024 characters.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -302,8 +302,8 @@ WriterOutputStream</H3>
 public <B>WriterOutputStream</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</A>&nbsp;writer,
                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/charset/CharsetDecoder.html?is-external=true" title="class or interface in java.nio.charset">CharsetDecoder</A>&nbsp;decoder)</PRE>
 <DL>
-<DD>Constructs a new <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><CODE>WriterOutputStream</CODE></A> with a default output buffer size of
- 1024 characters. The output buffer will only be flushed when it overflows or when
+<DD>Constructs a new <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><CODE>WriterOutputStream</CODE></A> with a default fairplay.output buffer size of
+ 1024 characters. The fairplay.output buffer will only be flushed when it overflows or when
  <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html#flush()"><CODE>flush()</CODE></A> or <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html#close()"><CODE>close()</CODE></A> is called.
 <P>
 <DL>
@@ -324,10 +324,10 @@ public <B>WriterOutputStream</B>(<A HREF="http://download.oracle.com/javase/6/do
 <DD>Constructs a new <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><CODE>WriterOutputStream</CODE></A>.
 <P>
 <DL>
-<DT><B>Parameters:</B><DD><CODE>writer</CODE> - the target <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io"><CODE>Writer</CODE></A><DD><CODE>decoder</CODE> - the charset decoder<DD><CODE>bufferSize</CODE> - the size of the output buffer in number of characters<DD><CODE>writeImmediately</CODE> - If <tt>true</tt> the output buffer will be flushed after each
+<DT><B>Parameters:</B><DD><CODE>writer</CODE> - the target <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io"><CODE>Writer</CODE></A><DD><CODE>decoder</CODE> - the charset decoder<DD><CODE>bufferSize</CODE> - the size of the fairplay.output buffer in number of characters<DD><CODE>writeImmediately</CODE> - If <tt>true</tt> the fairplay.output buffer will be flushed after each
                          write operation, i.e. all available data will be written to the
                          underlying <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io"><CODE>Writer</CODE></A> immediately. If <tt>false</tt>, the
-                         output buffer will only be flushed when it overflows or when
+                         fairplay.output buffer will only be flushed when it overflows or when
                          <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html#flush()"><CODE>flush()</CODE></A> or <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html#close()"><CODE>close()</CODE></A> is called.<DT><B>Since:</B></DT>
   <DD>2.1</DD>
 </DL>
@@ -345,10 +345,10 @@ public <B>WriterOutputStream</B>(<A HREF="http://download.oracle.com/javase/6/do
 <DD>Constructs a new <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><CODE>WriterOutputStream</CODE></A>.
 <P>
 <DL>
-<DT><B>Parameters:</B><DD><CODE>writer</CODE> - the target <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io"><CODE>Writer</CODE></A><DD><CODE>charset</CODE> - the charset encoding<DD><CODE>bufferSize</CODE> - the size of the output buffer in number of characters<DD><CODE>writeImmediately</CODE> - If <tt>true</tt> the output buffer will be flushed after each
+<DT><B>Parameters:</B><DD><CODE>writer</CODE> - the target <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io"><CODE>Writer</CODE></A><DD><CODE>charset</CODE> - the charset encoding<DD><CODE>bufferSize</CODE> - the size of the fairplay.output buffer in number of characters<DD><CODE>writeImmediately</CODE> - If <tt>true</tt> the fairplay.output buffer will be flushed after each
                          write operation, i.e. all available data will be written to the
                          underlying <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io"><CODE>Writer</CODE></A> immediately. If <tt>false</tt>, the
-                         output buffer will only be flushed when it overflows or when
+                         fairplay.output buffer will only be flushed when it overflows or when
                          <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html#flush()"><CODE>flush()</CODE></A> or <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html#close()"><CODE>close()</CODE></A> is called.</DL>
 </DL>
 <HR>
@@ -359,8 +359,8 @@ WriterOutputStream</H3>
 public <B>WriterOutputStream</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</A>&nbsp;writer,
                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html?is-external=true" title="class or interface in java.nio.charset">Charset</A>&nbsp;charset)</PRE>
 <DL>
-<DD>Constructs a new <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><CODE>WriterOutputStream</CODE></A> with a default output buffer size of
- 1024 characters. The output buffer will only be flushed when it overflows or when
+<DD>Constructs a new <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><CODE>WriterOutputStream</CODE></A> with a default fairplay.output buffer size of
+ 1024 characters. The fairplay.output buffer will only be flushed when it overflows or when
  <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html#flush()"><CODE>flush()</CODE></A> or <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html#close()"><CODE>close()</CODE></A> is called.
 <P>
 <DL>
@@ -379,10 +379,10 @@ public <B>WriterOutputStream</B>(<A HREF="http://download.oracle.com/javase/6/do
 <DD>Constructs a new <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><CODE>WriterOutputStream</CODE></A>.
 <P>
 <DL>
-<DT><B>Parameters:</B><DD><CODE>writer</CODE> - the target <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io"><CODE>Writer</CODE></A><DD><CODE>charsetName</CODE> - the name of the charset encoding<DD><CODE>bufferSize</CODE> - the size of the output buffer in number of characters<DD><CODE>writeImmediately</CODE> - If <tt>true</tt> the output buffer will be flushed after each
+<DT><B>Parameters:</B><DD><CODE>writer</CODE> - the target <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io"><CODE>Writer</CODE></A><DD><CODE>charsetName</CODE> - the name of the charset encoding<DD><CODE>bufferSize</CODE> - the size of the fairplay.output buffer in number of characters<DD><CODE>writeImmediately</CODE> - If <tt>true</tt> the fairplay.output buffer will be flushed after each
                          write operation, i.e. all available data will be written to the
                          underlying <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io"><CODE>Writer</CODE></A> immediately. If <tt>false</tt>, the
-                         output buffer will only be flushed when it overflows or when
+                         fairplay.output buffer will only be flushed when it overflows or when
                          <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html#flush()"><CODE>flush()</CODE></A> or <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html#close()"><CODE>close()</CODE></A> is called.</DL>
 </DL>
 <HR>
@@ -393,8 +393,8 @@ WriterOutputStream</H3>
 public <B>WriterOutputStream</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</A>&nbsp;writer,
                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;charsetName)</PRE>
 <DL>
-<DD>Constructs a new <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><CODE>WriterOutputStream</CODE></A> with a default output buffer size of
- 1024 characters. The output buffer will only be flushed when it overflows or when
+<DD>Constructs a new <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><CODE>WriterOutputStream</CODE></A> with a default fairplay.output buffer size of
+ 1024 characters. The fairplay.output buffer will only be flushed when it overflows or when
  <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html#flush()"><CODE>flush()</CODE></A> or <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html#close()"><CODE>close()</CODE></A> is called.
 <P>
 <DL>
@@ -408,7 +408,7 @@ WriterOutputStream</H3>
 public <B>WriterOutputStream</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io">Writer</A>&nbsp;writer)</PRE>
 <DL>
 <DD>Constructs a new <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html" title="class in org.apache.commons.io.output"><CODE>WriterOutputStream</CODE></A> that uses the default character encoding
- and with a default output buffer size of 1024 characters. The output buffer will only
+ and with a default fairplay.output buffer size of 1024 characters. The fairplay.output buffer will only
  be flushed when it overflows or when <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html#flush()"><CODE>flush()</CODE></A> or <A HREF="../../../../../org/apache/commons/io/output/WriterOutputStream.html#close()"><CODE>close()</CODE></A> is called.
 <P>
 <DL>
@@ -490,7 +490,7 @@ flush</H3>
 public void <B>flush</B>()
            throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
-<DD>Flush the stream. Any remaining content accumulated in the output buffer
+<DD>Flush the stream. Any remaining content accumulated in the fairplay.output buffer
  will be written to the underlying <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io"><CODE>Writer</CODE></A>. After that
  <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true#flush()" title="class or interface in java.io"><CODE>Writer.flush()</CODE></A> will be called.
 <P>
@@ -511,7 +511,7 @@ close</H3>
 public void <B>close</B>()
            throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
-<DD>Close the stream. Any remaining content accumulated in the output buffer
+<DD>Close the stream. Any remaining content accumulated in the fairplay.output buffer
  will be written to the underlying <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true" title="class or interface in java.io"><CODE>Writer</CODE></A>. After that
  <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Writer.html?is-external=true#close()" title="class or interface in java.io"><CODE>Writer.close()</CODE></A> will be called.
 <P>
@@ -558,7 +558,7 @@ public void <B>close</B>()
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html" title="class in org.apache.commons.io.output"><B>PREV CLASS</B></A>&nbsp;
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/XmlStreamWriter.html" title="class in org.apache.commons.io.output"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-  <A HREF="../../../../../index.html?org/apache/commons/io/output/WriterOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+  <A HREF="../../../../../index.html?org/apache/commons/io/fairplay.output/WriterOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="WriterOutputStream.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
 &nbsp;<SCRIPT type="text/javascript">
   <!--

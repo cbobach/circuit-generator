@@ -31,7 +31,7 @@
 <FONT color="green">028</FONT>    <a name="line.28"></a>
 <FONT color="green">029</FONT>    /**<a name="line.29"></a>
 <FONT color="green">030</FONT>     * &lt;p&gt;Controls &lt;code&gt;String&lt;/code&gt; formatting for {@link ToStringBuilder}.<a name="line.30"></a>
-<FONT color="green">031</FONT>     * The main public interface is always via &lt;code&gt;ToStringBuilder&lt;/code&gt;.&lt;/p&gt;<a name="line.31"></a>
+<FONT color="green">031</FONT>     * The fairplay.main public interface is always via &lt;code&gt;ToStringBuilder&lt;/code&gt;.&lt;/p&gt;<a name="line.31"></a>
 <FONT color="green">032</FONT>     *<a name="line.32"></a>
 <FONT color="green">033</FONT>     * &lt;p&gt;These classes are intended to be used as &lt;code&gt;Singletons&lt;/code&gt;.<a name="line.33"></a>
 <FONT color="green">034</FONT>     * There is no need to instantiate a new style each time. A program<a name="line.34"></a>
@@ -43,13 +43,13 @@
 <FONT color="green">040</FONT>     * &lt;p&gt;If required, a subclass can override as many or as few of the<a name="line.40"></a>
 <FONT color="green">041</FONT>     * methods as it requires. Each object type (from &lt;code&gt;boolean&lt;/code&gt;<a name="line.41"></a>
 <FONT color="green">042</FONT>     * to &lt;code&gt;long&lt;/code&gt; to &lt;code&gt;Object&lt;/code&gt; to &lt;code&gt;int[]&lt;/code&gt;) has<a name="line.42"></a>
-<FONT color="green">043</FONT>     * its own methods to output it. Most have two versions, detail and summary.<a name="line.43"></a>
+<FONT color="green">043</FONT>     * its own methods to fairplay.output it. Most have two versions, detail and summary.<a name="line.43"></a>
 <FONT color="green">044</FONT>     *<a name="line.44"></a>
 <FONT color="green">045</FONT>     * &lt;p&gt;For example, the detail version of the array based methods will<a name="line.45"></a>
-<FONT color="green">046</FONT>     * output the whole array, whereas the summary method will just output<a name="line.46"></a>
+<FONT color="green">046</FONT>     * fairplay.output the whole array, whereas the summary method will just fairplay.output<a name="line.46"></a>
 <FONT color="green">047</FONT>     * the array length.&lt;/p&gt;<a name="line.47"></a>
 <FONT color="green">048</FONT>     *<a name="line.48"></a>
-<FONT color="green">049</FONT>     * &lt;p&gt;If you want to format the output of certain objects, such as dates, you<a name="line.49"></a>
+<FONT color="green">049</FONT>     * &lt;p&gt;If you want to format the fairplay.output of certain objects, such as dates, you<a name="line.49"></a>
 <FONT color="green">050</FONT>     * must create a subclass and override a method.<a name="line.50"></a>
 <FONT color="green">051</FONT>     * &lt;pre&gt;<a name="line.51"></a>
 <FONT color="green">052</FONT>     * public class MyStyle extends ToStringStyle {<a name="line.52"></a>
@@ -75,7 +75,7 @@
 <FONT color="green">072</FONT>    <a name="line.72"></a>
 <FONT color="green">073</FONT>        /**<a name="line.73"></a>
 <FONT color="green">074</FONT>         * The default toString style. Using the Using the &lt;code&gt;Person&lt;/code&gt;<a name="line.74"></a>
-<FONT color="green">075</FONT>         * example from {@link ToStringBuilder}, the output would look like this:<a name="line.75"></a>
+<FONT color="green">075</FONT>         * example from {@link ToStringBuilder}, the fairplay.output would look like this:<a name="line.75"></a>
 <FONT color="green">076</FONT>         *<a name="line.76"></a>
 <FONT color="green">077</FONT>         * &lt;pre&gt;<a name="line.77"></a>
 <FONT color="green">078</FONT>         * Person@182f0db[name=John Doe,age=33,smoker=false]<a name="line.78"></a>
@@ -85,7 +85,7 @@
 <FONT color="green">082</FONT>    <a name="line.82"></a>
 <FONT color="green">083</FONT>        /**<a name="line.83"></a>
 <FONT color="green">084</FONT>         * The multi line toString style. Using the Using the &lt;code&gt;Person&lt;/code&gt;<a name="line.84"></a>
-<FONT color="green">085</FONT>         * example from {@link ToStringBuilder}, the output would look like this:<a name="line.85"></a>
+<FONT color="green">085</FONT>         * example from {@link ToStringBuilder}, the fairplay.output would look like this:<a name="line.85"></a>
 <FONT color="green">086</FONT>         *<a name="line.86"></a>
 <FONT color="green">087</FONT>         * &lt;pre&gt;<a name="line.87"></a>
 <FONT color="green">088</FONT>         * Person@182f0db[<a name="line.88"></a>
@@ -99,7 +99,7 @@
 <FONT color="green">096</FONT>    <a name="line.96"></a>
 <FONT color="green">097</FONT>        /**<a name="line.97"></a>
 <FONT color="green">098</FONT>         * The no field names toString style. Using the Using the<a name="line.98"></a>
-<FONT color="green">099</FONT>         * &lt;code&gt;Person&lt;/code&gt; example from {@link ToStringBuilder}, the output<a name="line.99"></a>
+<FONT color="green">099</FONT>         * &lt;code&gt;Person&lt;/code&gt; example from {@link ToStringBuilder}, the fairplay.output<a name="line.99"></a>
 <FONT color="green">100</FONT>         * would look like this:<a name="line.100"></a>
 <FONT color="green">101</FONT>         *<a name="line.101"></a>
 <FONT color="green">102</FONT>         * &lt;pre&gt;<a name="line.102"></a>
@@ -110,7 +110,7 @@
 <FONT color="green">107</FONT>    <a name="line.107"></a>
 <FONT color="green">108</FONT>        /**<a name="line.108"></a>
 <FONT color="green">109</FONT>         * The short prefix toString style. Using the &lt;code&gt;Person&lt;/code&gt; example<a name="line.109"></a>
-<FONT color="green">110</FONT>         * from {@link ToStringBuilder}, the output would look like this:<a name="line.110"></a>
+<FONT color="green">110</FONT>         * from {@link ToStringBuilder}, the fairplay.output would look like this:<a name="line.110"></a>
 <FONT color="green">111</FONT>         *<a name="line.111"></a>
 <FONT color="green">112</FONT>         * &lt;pre&gt;<a name="line.112"></a>
 <FONT color="green">113</FONT>         * Person[name=John Doe,age=33,smoker=false]<a name="line.113"></a>
@@ -122,7 +122,7 @@
 <FONT color="green">119</FONT>    <a name="line.119"></a>
 <FONT color="green">120</FONT>        /**<a name="line.120"></a>
 <FONT color="green">121</FONT>         * The simple toString style. Using the Using the &lt;code&gt;Person&lt;/code&gt;<a name="line.121"></a>
-<FONT color="green">122</FONT>         * example from {@link ToStringBuilder}, the output would look like this:<a name="line.122"></a>
+<FONT color="green">122</FONT>         * example from {@link ToStringBuilder}, the fairplay.output would look like this:<a name="line.122"></a>
 <FONT color="green">123</FONT>         *<a name="line.123"></a>
 <FONT color="green">124</FONT>         * &lt;pre&gt;<a name="line.124"></a>
 <FONT color="green">125</FONT>         * John Doe,33,false<a name="line.125"></a>
@@ -446,7 +446,7 @@
 <FONT color="green">443</FONT>         * &lt;p&gt;Append to the &lt;code&gt;toString&lt;/code&gt; an &lt;code&gt;Object&lt;/code&gt;,<a name="line.443"></a>
 <FONT color="green">444</FONT>         * correctly interpreting its type.&lt;/p&gt;<a name="line.444"></a>
 <FONT color="green">445</FONT>         *<a name="line.445"></a>
-<FONT color="green">446</FONT>         * &lt;p&gt;This method performs the main lookup by Class type to correctly<a name="line.446"></a>
+<FONT color="green">446</FONT>         * &lt;p&gt;This method performs the fairplay.main lookup by Class type to correctly<a name="line.446"></a>
 <FONT color="green">447</FONT>         * route arrays, &lt;code&gt;Collections&lt;/code&gt;, &lt;code&gt;Maps&lt;/code&gt; and<a name="line.447"></a>
 <FONT color="green">448</FONT>         * &lt;code&gt;Objects&lt;/code&gt; to the appropriate method.&lt;/p&gt;<a name="line.448"></a>
 <FONT color="green">449</FONT>         *<a name="line.449"></a>
@@ -459,7 +459,7 @@
 <FONT color="green">456</FONT>         * @param fieldName  the field name, typically not used as already appended<a name="line.456"></a>
 <FONT color="green">457</FONT>         * @param value  the value to add to the &lt;code&gt;toString&lt;/code&gt;,<a name="line.457"></a>
 <FONT color="green">458</FONT>         *  not &lt;code&gt;null&lt;/code&gt;<a name="line.458"></a>
-<FONT color="green">459</FONT>         * @param detail  output detail or not<a name="line.459"></a>
+<FONT color="green">459</FONT>         * @param detail  fairplay.output detail or not<a name="line.459"></a>
 <FONT color="green">460</FONT>         */<a name="line.460"></a>
 <FONT color="green">461</FONT>        protected void appendInternal(StringBuffer buffer, String fieldName, Object value, boolean detail) {<a name="line.461"></a>
 <FONT color="green">462</FONT>            if (isRegistered(value)<a name="line.462"></a>
@@ -1440,7 +1440,7 @@
 <FONT color="green">1437</FONT>         * &lt;p&gt;Append to the &lt;code&gt;toString&lt;/code&gt; the class name.&lt;/p&gt;<a name="line.1437"></a>
 <FONT color="green">1438</FONT>         *<a name="line.1438"></a>
 <FONT color="green">1439</FONT>         * @param buffer  the &lt;code&gt;StringBuffer&lt;/code&gt; to populate<a name="line.1439"></a>
-<FONT color="green">1440</FONT>         * @param object  the &lt;code&gt;Object&lt;/code&gt; whose name to output<a name="line.1440"></a>
+<FONT color="green">1440</FONT>         * @param object  the &lt;code&gt;Object&lt;/code&gt; whose name to fairplay.output<a name="line.1440"></a>
 <FONT color="green">1441</FONT>         */<a name="line.1441"></a>
 <FONT color="green">1442</FONT>        protected void appendClassName(StringBuffer buffer, Object object) {<a name="line.1442"></a>
 <FONT color="green">1443</FONT>            if (useClassName &amp;&amp; object != null) {<a name="line.1443"></a>
@@ -1457,7 +1457,7 @@
 <FONT color="green">1454</FONT>         * &lt;p&gt;Append the {@link System#identityHashCode(java.lang.Object)}.&lt;/p&gt;<a name="line.1454"></a>
 <FONT color="green">1455</FONT>         *<a name="line.1455"></a>
 <FONT color="green">1456</FONT>         * @param buffer  the &lt;code&gt;StringBuffer&lt;/code&gt; to populate<a name="line.1456"></a>
-<FONT color="green">1457</FONT>         * @param object  the &lt;code&gt;Object&lt;/code&gt; whose id to output<a name="line.1457"></a>
+<FONT color="green">1457</FONT>         * @param object  the &lt;code&gt;Object&lt;/code&gt; whose id to fairplay.output<a name="line.1457"></a>
 <FONT color="green">1458</FONT>         */<a name="line.1458"></a>
 <FONT color="green">1459</FONT>        protected void appendIdentityHashCode(StringBuffer buffer, Object object) {<a name="line.1459"></a>
 <FONT color="green">1460</FONT>            if (this.isUseIdentityHashCode() &amp;&amp; object!=null) {<a name="line.1460"></a>
@@ -1535,7 +1535,7 @@
 <FONT color="green">1532</FONT>         * &lt;p&gt;The size summary is used to summarize the contents of<a name="line.1532"></a>
 <FONT color="green">1533</FONT>         * &lt;code&gt;Collections&lt;/code&gt;, &lt;code&gt;Maps&lt;/code&gt; and arrays.&lt;/p&gt;<a name="line.1533"></a>
 <FONT color="green">1534</FONT>         *<a name="line.1534"></a>
-<FONT color="green">1535</FONT>         * &lt;p&gt;The output consists of a prefix, the passed in size<a name="line.1535"></a>
+<FONT color="green">1535</FONT>         * &lt;p&gt;The fairplay.output consists of a prefix, the passed in size<a name="line.1535"></a>
 <FONT color="green">1536</FONT>         * and a suffix.&lt;/p&gt;<a name="line.1536"></a>
 <FONT color="green">1537</FONT>         *<a name="line.1537"></a>
 <FONT color="green">1538</FONT>         * &lt;p&gt;The default format is &lt;code&gt;'&amp;lt;size=n&amp;gt;'&lt;code&gt;.&lt;/p&gt;<a name="line.1538"></a>
@@ -1551,7 +1551,7 @@
 <FONT color="green">1548</FONT>        }<a name="line.1548"></a>
 <FONT color="green">1549</FONT>    <a name="line.1549"></a>
 <FONT color="green">1550</FONT>        /**<a name="line.1550"></a>
-<FONT color="green">1551</FONT>         * &lt;p&gt;Is this field to be output in full detail.&lt;/p&gt;<a name="line.1551"></a>
+<FONT color="green">1551</FONT>         * &lt;p&gt;Is this field to be fairplay.output in full detail.&lt;/p&gt;<a name="line.1551"></a>
 <FONT color="green">1552</FONT>         *<a name="line.1552"></a>
 <FONT color="green">1553</FONT>         * &lt;p&gt;This method converts a detail request into a detail level.<a name="line.1553"></a>
 <FONT color="green">1554</FONT>         * The calling code may request full detail (&lt;code&gt;true&lt;/code&gt;),<a name="line.1554"></a>
@@ -1610,7 +1610,7 @@
 <FONT color="green">1607</FONT>        //---------------------------------------------------------------------<a name="line.1607"></a>
 <FONT color="green">1608</FONT>    <a name="line.1608"></a>
 <FONT color="green">1609</FONT>        /**<a name="line.1609"></a>
-<FONT color="green">1610</FONT>         * &lt;p&gt;Gets whether to output short or long class names.&lt;/p&gt;<a name="line.1610"></a>
+<FONT color="green">1610</FONT>         * &lt;p&gt;Gets whether to fairplay.output short or long class names.&lt;/p&gt;<a name="line.1610"></a>
 <FONT color="green">1611</FONT>         *<a name="line.1611"></a>
 <FONT color="green">1612</FONT>         * @return the current useShortClassName flag<a name="line.1612"></a>
 <FONT color="green">1613</FONT>         * @since 2.0<a name="line.1613"></a>
@@ -1620,7 +1620,7 @@
 <FONT color="green">1617</FONT>        }<a name="line.1617"></a>
 <FONT color="green">1618</FONT>    <a name="line.1618"></a>
 <FONT color="green">1619</FONT>        /**<a name="line.1619"></a>
-<FONT color="green">1620</FONT>         * &lt;p&gt;Sets whether to output short or long class names.&lt;/p&gt;<a name="line.1620"></a>
+<FONT color="green">1620</FONT>         * &lt;p&gt;Sets whether to fairplay.output short or long class names.&lt;/p&gt;<a name="line.1620"></a>
 <FONT color="green">1621</FONT>         *<a name="line.1621"></a>
 <FONT color="green">1622</FONT>         * @param useShortClassName  the new useShortClassName flag<a name="line.1622"></a>
 <FONT color="green">1623</FONT>         * @since 2.0<a name="line.1623"></a>
@@ -1694,7 +1694,7 @@
 <FONT color="green">1691</FONT>        //---------------------------------------------------------------------<a name="line.1691"></a>
 <FONT color="green">1692</FONT>    <a name="line.1692"></a>
 <FONT color="green">1693</FONT>        /**<a name="line.1693"></a>
-<FONT color="green">1694</FONT>         * &lt;p&gt;Gets whether to output array content detail.&lt;/p&gt;<a name="line.1694"></a>
+<FONT color="green">1694</FONT>         * &lt;p&gt;Gets whether to fairplay.output array content detail.&lt;/p&gt;<a name="line.1694"></a>
 <FONT color="green">1695</FONT>         *<a name="line.1695"></a>
 <FONT color="green">1696</FONT>         * @return the current array content detail setting<a name="line.1696"></a>
 <FONT color="green">1697</FONT>         */<a name="line.1697"></a>
@@ -1703,7 +1703,7 @@
 <FONT color="green">1700</FONT>        }<a name="line.1700"></a>
 <FONT color="green">1701</FONT>    <a name="line.1701"></a>
 <FONT color="green">1702</FONT>        /**<a name="line.1702"></a>
-<FONT color="green">1703</FONT>         * &lt;p&gt;Sets whether to output array content detail.&lt;/p&gt;<a name="line.1703"></a>
+<FONT color="green">1703</FONT>         * &lt;p&gt;Sets whether to fairplay.output array content detail.&lt;/p&gt;<a name="line.1703"></a>
 <FONT color="green">1704</FONT>         *<a name="line.1704"></a>
 <FONT color="green">1705</FONT>         * @param arrayContentDetail  the new arrayContentDetail flag<a name="line.1705"></a>
 <FONT color="green">1706</FONT>         */<a name="line.1706"></a>
@@ -1944,21 +1944,21 @@
 <FONT color="green">1941</FONT>        //---------------------------------------------------------------------<a name="line.1941"></a>
 <FONT color="green">1942</FONT>    <a name="line.1942"></a>
 <FONT color="green">1943</FONT>        /**<a name="line.1943"></a>
-<FONT color="green">1944</FONT>         * &lt;p&gt;Gets the text to output when &lt;code&gt;null&lt;/code&gt; found.&lt;/p&gt;<a name="line.1944"></a>
+<FONT color="green">1944</FONT>         * &lt;p&gt;Gets the text to fairplay.output when &lt;code&gt;null&lt;/code&gt; found.&lt;/p&gt;<a name="line.1944"></a>
 <FONT color="green">1945</FONT>         *<a name="line.1945"></a>
-<FONT color="green">1946</FONT>         * @return the current text to output when null found<a name="line.1946"></a>
+<FONT color="green">1946</FONT>         * @return the current text to fairplay.output when null found<a name="line.1946"></a>
 <FONT color="green">1947</FONT>         */<a name="line.1947"></a>
 <FONT color="green">1948</FONT>        protected String getNullText() {<a name="line.1948"></a>
 <FONT color="green">1949</FONT>            return nullText;<a name="line.1949"></a>
 <FONT color="green">1950</FONT>        }<a name="line.1950"></a>
 <FONT color="green">1951</FONT>    <a name="line.1951"></a>
 <FONT color="green">1952</FONT>        /**<a name="line.1952"></a>
-<FONT color="green">1953</FONT>         * &lt;p&gt;Sets the text to output when &lt;code&gt;null&lt;/code&gt; found.&lt;/p&gt;<a name="line.1953"></a>
+<FONT color="green">1953</FONT>         * &lt;p&gt;Sets the text to fairplay.output when &lt;code&gt;null&lt;/code&gt; found.&lt;/p&gt;<a name="line.1953"></a>
 <FONT color="green">1954</FONT>         *<a name="line.1954"></a>
 <FONT color="green">1955</FONT>         * &lt;p&gt;&lt;code&gt;null&lt;/code&gt; is accepted, but will be converted to<a name="line.1955"></a>
 <FONT color="green">1956</FONT>         * an empty String.&lt;/p&gt;<a name="line.1956"></a>
 <FONT color="green">1957</FONT>         *<a name="line.1957"></a>
-<FONT color="green">1958</FONT>         * @param nullText  the new text to output when null found<a name="line.1958"></a>
+<FONT color="green">1958</FONT>         * @param nullText  the new text to fairplay.output when null found<a name="line.1958"></a>
 <FONT color="green">1959</FONT>         */<a name="line.1959"></a>
 <FONT color="green">1960</FONT>        protected void setNullText(String nullText) {<a name="line.1960"></a>
 <FONT color="green">1961</FONT>            if (nullText == null) {<a name="line.1961"></a>
@@ -1970,10 +1970,10 @@
 <FONT color="green">1967</FONT>        //---------------------------------------------------------------------<a name="line.1967"></a>
 <FONT color="green">1968</FONT>    <a name="line.1968"></a>
 <FONT color="green">1969</FONT>        /**<a name="line.1969"></a>
-<FONT color="green">1970</FONT>         * &lt;p&gt;Gets the start text to output when a &lt;code&gt;Collection&lt;/code&gt;,<a name="line.1970"></a>
-<FONT color="green">1971</FONT>         * &lt;code&gt;Map&lt;/code&gt; or array size is output.&lt;/p&gt;<a name="line.1971"></a>
+<FONT color="green">1970</FONT>         * &lt;p&gt;Gets the start text to fairplay.output when a &lt;code&gt;Collection&lt;/code&gt;,<a name="line.1970"></a>
+<FONT color="green">1971</FONT>         * &lt;code&gt;Map&lt;/code&gt; or array size is fairplay.output.&lt;/p&gt;<a name="line.1971"></a>
 <FONT color="green">1972</FONT>         *<a name="line.1972"></a>
-<FONT color="green">1973</FONT>         * &lt;p&gt;This is output before the size value.&lt;/p&gt;<a name="line.1973"></a>
+<FONT color="green">1973</FONT>         * &lt;p&gt;This is fairplay.output before the size value.&lt;/p&gt;<a name="line.1973"></a>
 <FONT color="green">1974</FONT>         *<a name="line.1974"></a>
 <FONT color="green">1975</FONT>         * @return the current start of size text<a name="line.1975"></a>
 <FONT color="green">1976</FONT>         */<a name="line.1976"></a>
@@ -1982,10 +1982,10 @@
 <FONT color="green">1979</FONT>        }<a name="line.1979"></a>
 <FONT color="green">1980</FONT>    <a name="line.1980"></a>
 <FONT color="green">1981</FONT>        /**<a name="line.1981"></a>
-<FONT color="green">1982</FONT>         * &lt;p&gt;Sets the start text to output when a &lt;code&gt;Collection&lt;/code&gt;,<a name="line.1982"></a>
-<FONT color="green">1983</FONT>         * &lt;code&gt;Map&lt;/code&gt; or array size is output.&lt;/p&gt;<a name="line.1983"></a>
+<FONT color="green">1982</FONT>         * &lt;p&gt;Sets the start text to fairplay.output when a &lt;code&gt;Collection&lt;/code&gt;,<a name="line.1982"></a>
+<FONT color="green">1983</FONT>         * &lt;code&gt;Map&lt;/code&gt; or array size is fairplay.output.&lt;/p&gt;<a name="line.1983"></a>
 <FONT color="green">1984</FONT>         *<a name="line.1984"></a>
-<FONT color="green">1985</FONT>         * &lt;p&gt;This is output before the size value.&lt;/p&gt;<a name="line.1985"></a>
+<FONT color="green">1985</FONT>         * &lt;p&gt;This is fairplay.output before the size value.&lt;/p&gt;<a name="line.1985"></a>
 <FONT color="green">1986</FONT>         *<a name="line.1986"></a>
 <FONT color="green">1987</FONT>         * &lt;p&gt;&lt;code&gt;null&lt;/code&gt; is accepted, but will be converted to<a name="line.1987"></a>
 <FONT color="green">1988</FONT>         * an empty String.&lt;/p&gt;<a name="line.1988"></a>
@@ -2002,10 +2002,10 @@
 <FONT color="green">1999</FONT>        //---------------------------------------------------------------------<a name="line.1999"></a>
 <FONT color="green">2000</FONT>    <a name="line.2000"></a>
 <FONT color="green">2001</FONT>        /**<a name="line.2001"></a>
-<FONT color="green">2002</FONT>         * &lt;p&gt;Gets the end text to output when a &lt;code&gt;Collection&lt;/code&gt;,<a name="line.2002"></a>
-<FONT color="green">2003</FONT>         * &lt;code&gt;Map&lt;/code&gt; or array size is output.&lt;/p&gt;<a name="line.2003"></a>
+<FONT color="green">2002</FONT>         * &lt;p&gt;Gets the end text to fairplay.output when a &lt;code&gt;Collection&lt;/code&gt;,<a name="line.2002"></a>
+<FONT color="green">2003</FONT>         * &lt;code&gt;Map&lt;/code&gt; or array size is fairplay.output.&lt;/p&gt;<a name="line.2003"></a>
 <FONT color="green">2004</FONT>         *<a name="line.2004"></a>
-<FONT color="green">2005</FONT>         * &lt;p&gt;This is output after the size value.&lt;/p&gt;<a name="line.2005"></a>
+<FONT color="green">2005</FONT>         * &lt;p&gt;This is fairplay.output after the size value.&lt;/p&gt;<a name="line.2005"></a>
 <FONT color="green">2006</FONT>         *<a name="line.2006"></a>
 <FONT color="green">2007</FONT>         * @return the current end of size text<a name="line.2007"></a>
 <FONT color="green">2008</FONT>         */<a name="line.2008"></a>
@@ -2014,10 +2014,10 @@
 <FONT color="green">2011</FONT>        }<a name="line.2011"></a>
 <FONT color="green">2012</FONT>    <a name="line.2012"></a>
 <FONT color="green">2013</FONT>        /**<a name="line.2013"></a>
-<FONT color="green">2014</FONT>         * &lt;p&gt;Sets the end text to output when a &lt;code&gt;Collection&lt;/code&gt;,<a name="line.2014"></a>
-<FONT color="green">2015</FONT>         * &lt;code&gt;Map&lt;/code&gt; or array size is output.&lt;/p&gt;<a name="line.2015"></a>
+<FONT color="green">2014</FONT>         * &lt;p&gt;Sets the end text to fairplay.output when a &lt;code&gt;Collection&lt;/code&gt;,<a name="line.2014"></a>
+<FONT color="green">2015</FONT>         * &lt;code&gt;Map&lt;/code&gt; or array size is fairplay.output.&lt;/p&gt;<a name="line.2015"></a>
 <FONT color="green">2016</FONT>         *<a name="line.2016"></a>
-<FONT color="green">2017</FONT>         * &lt;p&gt;This is output after the size value.&lt;/p&gt;<a name="line.2017"></a>
+<FONT color="green">2017</FONT>         * &lt;p&gt;This is fairplay.output after the size value.&lt;/p&gt;<a name="line.2017"></a>
 <FONT color="green">2018</FONT>         *<a name="line.2018"></a>
 <FONT color="green">2019</FONT>         * &lt;p&gt;&lt;code&gt;null&lt;/code&gt; is accepted, but will be converted to<a name="line.2019"></a>
 <FONT color="green">2020</FONT>         * an empty String.&lt;/p&gt;<a name="line.2020"></a>
@@ -2034,10 +2034,10 @@
 <FONT color="green">2031</FONT>        //---------------------------------------------------------------------<a name="line.2031"></a>
 <FONT color="green">2032</FONT>    <a name="line.2032"></a>
 <FONT color="green">2033</FONT>        /**<a name="line.2033"></a>
-<FONT color="green">2034</FONT>         * &lt;p&gt;Gets the start text to output when an &lt;code&gt;Object&lt;/code&gt; is<a name="line.2034"></a>
-<FONT color="green">2035</FONT>         * output in summary mode.&lt;/p&gt;<a name="line.2035"></a>
+<FONT color="green">2034</FONT>         * &lt;p&gt;Gets the start text to fairplay.output when an &lt;code&gt;Object&lt;/code&gt; is<a name="line.2034"></a>
+<FONT color="green">2035</FONT>         * fairplay.output in summary mode.&lt;/p&gt;<a name="line.2035"></a>
 <FONT color="green">2036</FONT>         *<a name="line.2036"></a>
-<FONT color="green">2037</FONT>         * &lt;p&gt;This is output before the size value.&lt;/p&gt;<a name="line.2037"></a>
+<FONT color="green">2037</FONT>         * &lt;p&gt;This is fairplay.output before the size value.&lt;/p&gt;<a name="line.2037"></a>
 <FONT color="green">2038</FONT>         *<a name="line.2038"></a>
 <FONT color="green">2039</FONT>         * @return the current start of summary text<a name="line.2039"></a>
 <FONT color="green">2040</FONT>         */<a name="line.2040"></a>
@@ -2046,10 +2046,10 @@
 <FONT color="green">2043</FONT>        }<a name="line.2043"></a>
 <FONT color="green">2044</FONT>    <a name="line.2044"></a>
 <FONT color="green">2045</FONT>        /**<a name="line.2045"></a>
-<FONT color="green">2046</FONT>         * &lt;p&gt;Sets the start text to output when an &lt;code&gt;Object&lt;/code&gt; is<a name="line.2046"></a>
-<FONT color="green">2047</FONT>         * output in summary mode.&lt;/p&gt;<a name="line.2047"></a>
+<FONT color="green">2046</FONT>         * &lt;p&gt;Sets the start text to fairplay.output when an &lt;code&gt;Object&lt;/code&gt; is<a name="line.2046"></a>
+<FONT color="green">2047</FONT>         * fairplay.output in summary mode.&lt;/p&gt;<a name="line.2047"></a>
 <FONT color="green">2048</FONT>         *<a name="line.2048"></a>
-<FONT color="green">2049</FONT>         * &lt;p&gt;This is output before the size value.&lt;/p&gt;<a name="line.2049"></a>
+<FONT color="green">2049</FONT>         * &lt;p&gt;This is fairplay.output before the size value.&lt;/p&gt;<a name="line.2049"></a>
 <FONT color="green">2050</FONT>         *<a name="line.2050"></a>
 <FONT color="green">2051</FONT>         * &lt;p&gt;&lt;code&gt;null&lt;/code&gt; is accepted, but will be converted to<a name="line.2051"></a>
 <FONT color="green">2052</FONT>         * an empty String.&lt;/p&gt;<a name="line.2052"></a>
@@ -2066,10 +2066,10 @@
 <FONT color="green">2063</FONT>        //---------------------------------------------------------------------<a name="line.2063"></a>
 <FONT color="green">2064</FONT>    <a name="line.2064"></a>
 <FONT color="green">2065</FONT>        /**<a name="line.2065"></a>
-<FONT color="green">2066</FONT>         * &lt;p&gt;Gets the end text to output when an &lt;code&gt;Object&lt;/code&gt; is<a name="line.2066"></a>
-<FONT color="green">2067</FONT>         * output in summary mode.&lt;/p&gt;<a name="line.2067"></a>
+<FONT color="green">2066</FONT>         * &lt;p&gt;Gets the end text to fairplay.output when an &lt;code&gt;Object&lt;/code&gt; is<a name="line.2066"></a>
+<FONT color="green">2067</FONT>         * fairplay.output in summary mode.&lt;/p&gt;<a name="line.2067"></a>
 <FONT color="green">2068</FONT>         *<a name="line.2068"></a>
-<FONT color="green">2069</FONT>         * &lt;p&gt;This is output after the size value.&lt;/p&gt;<a name="line.2069"></a>
+<FONT color="green">2069</FONT>         * &lt;p&gt;This is fairplay.output after the size value.&lt;/p&gt;<a name="line.2069"></a>
 <FONT color="green">2070</FONT>         *<a name="line.2070"></a>
 <FONT color="green">2071</FONT>         * @return the current end of summary text<a name="line.2071"></a>
 <FONT color="green">2072</FONT>         */<a name="line.2072"></a>
@@ -2078,10 +2078,10 @@
 <FONT color="green">2075</FONT>        }<a name="line.2075"></a>
 <FONT color="green">2076</FONT>    <a name="line.2076"></a>
 <FONT color="green">2077</FONT>        /**<a name="line.2077"></a>
-<FONT color="green">2078</FONT>         * &lt;p&gt;Sets the end text to output when an &lt;code&gt;Object&lt;/code&gt; is<a name="line.2078"></a>
-<FONT color="green">2079</FONT>         * output in summary mode.&lt;/p&gt;<a name="line.2079"></a>
+<FONT color="green">2078</FONT>         * &lt;p&gt;Sets the end text to fairplay.output when an &lt;code&gt;Object&lt;/code&gt; is<a name="line.2078"></a>
+<FONT color="green">2079</FONT>         * fairplay.output in summary mode.&lt;/p&gt;<a name="line.2079"></a>
 <FONT color="green">2080</FONT>         *<a name="line.2080"></a>
-<FONT color="green">2081</FONT>         * &lt;p&gt;This is output after the size value.&lt;/p&gt;<a name="line.2081"></a>
+<FONT color="green">2081</FONT>         * &lt;p&gt;This is fairplay.output after the size value.&lt;/p&gt;<a name="line.2081"></a>
 <FONT color="green">2082</FONT>         *<a name="line.2082"></a>
 <FONT color="green">2083</FONT>         * &lt;p&gt;&lt;code&gt;null&lt;/code&gt; is accepted, but will be converted to<a name="line.2083"></a>
 <FONT color="green">2084</FONT>         * an empty String.&lt;/p&gt;<a name="line.2084"></a>

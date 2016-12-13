@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
+import fairplay.gate.GateConstructor;
 import org.apache.commons.collections.map.MultiValueMap;
 
 import fairplay.parsers.CircuitParser;

@@ -59,7 +59,7 @@ function windowTitle()
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/TaggedOutputStream.html" title="class in org.apache.commons.io.output"><B>PREV CLASS</B></A>&nbsp;
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html" title="class in org.apache.commons.io.output"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-  <A HREF="../../../../../index.html?org/apache/commons/io/output/TeeOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+  <A HREF="../../../../../index.html?org/apache/commons/io/fairplay.output/TeeOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="TeeOutputStream.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
 &nbsp;<SCRIPT type="text/javascript">
   <!--
@@ -96,8 +96,8 @@ Class TeeOutputStream</H2>
 <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
   <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">java.io.OutputStream</A>
       <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/FilterOutputStream.html?is-external=true" title="class or interface in java.io">java.io.FilterOutputStream</A>
-          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html" title="class in org.apache.commons.io.output">org.apache.commons.io.output.ProxyOutputStream</A>
-              <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.io.output.TeeOutputStream</B>
+          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html" title="class in org.apache.commons.io.output">org.apache.commons.io.fairplay.output.ProxyOutputStream</A>
+              <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.io.fairplay.output.TeeOutputStream</B>
 </PRE>
 <DL>
 <DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Flushable.html?is-external=true" title="class or interface in java.io">Flushable</A></DD>
@@ -179,7 +179,7 @@ Classic splitter of OutputStream. Named after the unix 'tee'
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/io/output/TeeOutputStream.html#close()">close</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closes both output streams.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closes both fairplay.output streams.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -219,7 +219,7 @@ Classic splitter of OutputStream. Named after the unix 'tee'
 &nbsp;<A NAME="methods_inherited_from_class_org.apache.commons.io.output.ProxyOutputStream"><!-- --></A>
 <TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
 <TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
-<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.io.output.<A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html" title="class in org.apache.commons.io.output">ProxyOutputStream</A></B></TH>
+<TH ALIGN="left"><B>Methods inherited from class org.apache.commons.io.fairplay.output.<A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html" title="class in org.apache.commons.io.output">ProxyOutputStream</A></B></TH>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD><CODE><A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html#afterWrite(int)">afterWrite</A>, <A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html#beforeWrite(int)">beforeWrite</A>, <A HREF="../../../../../org/apache/commons/io/output/ProxyOutputStream.html#handleIOException(java.io.IOException)">handleIOException</A></CODE></TD>
@@ -277,7 +277,7 @@ public <B>TeeOutputStream</B>(<A HREF="http://download.oracle.com/javase/6/docs/
 <DD>Constructs a TeeOutputStream.
 <P>
 <DL>
-<DT><B>Parameters:</B><DD><CODE>out</CODE> - the main OutputStream<DD><CODE>branch</CODE> - the second OutputStream</DL>
+<DT><B>Parameters:</B><DD><CODE>out</CODE> - the fairplay.main OutputStream<DD><CODE>branch</CODE> - the second OutputStream</DL>
 </DL>
 
 <!-- ============ METHOD DETAIL ========== -->
@@ -374,11 +374,11 @@ close</H3>
 public void <B>close</B>()
            throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
-<DD>Closes both output streams.
+<DD>Closes both fairplay.output streams.
  
- If closing the main output stream throws an exception, attempt to close the branch output stream.
+ If closing the fairplay.main fairplay.output stream throws an exception, attempt to close the branch fairplay.output stream.
  
- If closing the main and branch output streams both throw exceptions, which exceptions is thrown by this method is
+ If closing the fairplay.main and branch fairplay.output streams both throw exceptions, which exceptions is thrown by this method is
  currently unspecified and subject to change.
 <P>
 <DD><DL>
@@ -424,7 +424,7 @@ public void <B>close</B>()
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/TaggedOutputStream.html" title="class in org.apache.commons.io.output"><B>PREV CLASS</B></A>&nbsp;
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/ThresholdingOutputStream.html" title="class in org.apache.commons.io.output"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-  <A HREF="../../../../../index.html?org/apache/commons/io/output/TeeOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+  <A HREF="../../../../../index.html?org/apache/commons/io/fairplay.output/TeeOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="TeeOutputStream.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
 &nbsp;<SCRIPT type="text/javascript">
   <!--

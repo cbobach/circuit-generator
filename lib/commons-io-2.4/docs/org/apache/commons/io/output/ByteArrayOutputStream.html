@@ -59,7 +59,7 @@ function windowTitle()
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/BrokenOutputStream.html" title="class in org.apache.commons.io.output"><B>PREV CLASS</B></A>&nbsp;
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/ClosedOutputStream.html" title="class in org.apache.commons.io.output"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-  <A HREF="../../../../../index.html?org/apache/commons/io/output/ByteArrayOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+  <A HREF="../../../../../index.html?org/apache/commons/io/fairplay.output/ByteArrayOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="ByteArrayOutputStream.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
 &nbsp;<SCRIPT type="text/javascript">
   <!--
@@ -95,7 +95,7 @@ Class ByteArrayOutputStream</H2>
 <PRE>
 <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
   <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">java.io.OutputStream</A>
-      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.io.output.ByteArrayOutputStream</B>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.commons.io.fairplay.output.ByteArrayOutputStream</B>
 </PRE>
 <DL>
 <DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Flushable.html?is-external=true" title="class or interface in java.io">Flushable</A></DD>
@@ -106,7 +106,7 @@ Class ByteArrayOutputStream</H2>
 </PRE>
 
 <P>
-This class implements an output stream in which the data is 
+This class implements an fairplay.output stream in which the data is
  written into a byte array. The buffer automatically grows as data 
  is written to it.
  <p> 
@@ -148,13 +148,13 @@ This class implements an output stream in which the data is
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/io/output/ByteArrayOutputStream.html#ByteArrayOutputStream()">ByteArrayOutputStream</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new byte array output stream.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new byte array fairplay.output stream.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/io/output/ByteArrayOutputStream.html#ByteArrayOutputStream(int)">ByteArrayOutputStream</A></B>(int&nbsp;size)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new byte array output stream, with a buffer capacity of 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new byte array fairplay.output stream, with a buffer capacity of
  the specified size, in bytes.</TD>
 </TR>
 </TABLE>
@@ -259,7 +259,7 @@ This class implements an output stream in which the data is
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes the entire contents of this byte stream to the
- specified output stream.</TD>
+ specified fairplay.output stream.</TD>
 </TR>
 </TABLE>
 &nbsp;<A NAME="methods_inherited_from_class_java.io.OutputStream"><!-- --></A>
@@ -298,7 +298,7 @@ ByteArrayOutputStream</H3>
 <PRE>
 public <B>ByteArrayOutputStream</B>()</PRE>
 <DL>
-<DD>Creates a new byte array output stream. The buffer capacity is 
+<DD>Creates a new byte array fairplay.output stream. The buffer capacity is
  initially 1024 bytes, though its size increases if necessary.
 <P>
 </DL>
@@ -309,7 +309,7 @@ ByteArrayOutputStream</H3>
 <PRE>
 public <B>ByteArrayOutputStream</B>(int&nbsp;size)</PRE>
 <DL>
-<DD>Creates a new byte array output stream, with a buffer capacity of 
+<DD>Creates a new byte array fairplay.output stream, with a buffer capacity of
  the specified size, in bytes.
 <P>
 <DL>
@@ -438,10 +438,10 @@ public void <B>writeTo</B>(<A HREF="http://download.oracle.com/javase/6/docs/api
              throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
 <DD>Writes the entire contents of this byte stream to the
- specified output stream.
+ specified fairplay.output stream.
 <P>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>out</CODE> - the output stream to write to
+<DT><B>Parameters:</B><DD><CODE>out</CODE> - the fairplay.output stream to write to
 <DT><B>Throws:</B>
 <DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE> - if an I/O error occurs, such as if the stream is closed<DT><B>See Also:</B><DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/ByteArrayOutputStream.html?is-external=true#writeTo(java.io.OutputStream)" title="class or interface in java.io"><CODE>ByteArrayOutputStream.writeTo(OutputStream)</CODE></A></DL>
 </DD>
@@ -490,7 +490,7 @@ public byte[] <B>toByteArray</B>()</PRE>
 <P>
 <DD><DL>
 
-<DT><B>Returns:</B><DD>the current contents of this output stream, as a byte array<DT><B>See Also:</B><DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/ByteArrayOutputStream.html?is-external=true#toByteArray()" title="class or interface in java.io"><CODE>ByteArrayOutputStream.toByteArray()</CODE></A></DL>
+<DT><B>Returns:</B><DD>the current contents of this fairplay.output stream, as a byte array<DT><B>See Also:</B><DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/ByteArrayOutputStream.html?is-external=true#toByteArray()" title="class or interface in java.io"><CODE>ByteArrayOutputStream.toByteArray()</CODE></A></DL>
 </DD>
 </DL>
 <HR>
@@ -562,7 +562,7 @@ public <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.ht
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/BrokenOutputStream.html" title="class in org.apache.commons.io.output"><B>PREV CLASS</B></A>&nbsp;
 &nbsp;<A HREF="../../../../../org/apache/commons/io/output/ClosedOutputStream.html" title="class in org.apache.commons.io.output"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-  <A HREF="../../../../../index.html?org/apache/commons/io/output/ByteArrayOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+  <A HREF="../../../../../index.html?org/apache/commons/io/fairplay.output/ByteArrayOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="ByteArrayOutputStream.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
 &nbsp;<SCRIPT type="text/javascript">
   <!--
