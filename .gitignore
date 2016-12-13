@@ -2,3 +2,14 @@
 bin/
 /data/
 out/
+.idea
+.settings
+.idea/compiler.xml
+.idea/copyright/
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+FairplayCircuitTools.iml
+src/main/resources/
+target/

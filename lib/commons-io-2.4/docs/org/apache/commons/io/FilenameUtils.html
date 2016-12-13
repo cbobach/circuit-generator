@@ -589,7 +589,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  <p>
  This method normalizes a path to a standard format.
  The input may contain separators in either Unix or Windows format.
- The output will contain separators in the format of the system.
+ The fairplay.output will contain separators in the format of the system.
  <p>
  A trailing slash will be retained.
  A double slash will be merged to a single slash (but UNC names are handled).
@@ -598,7 +598,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  If the double dot has no parent path segment to work with, <code>null</code>
  is returned.
  <p>
- The output will be the same on both Unix and Windows except
+ The fairplay.output will be the same on both Unix and Windows except
  for the separator character.
  <pre>
  /foo//               -->   /foo/
@@ -638,7 +638,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  <p>
  This method normalizes a path to a standard format.
  The input may contain separators in either Unix or Windows format.
- The output will contain separators in the format specified.
+ The fairplay.output will contain separators in the format specified.
  <p>
  A trailing slash will be retained.
  A double slash will be merged to a single slash (but UNC names are handled).
@@ -647,7 +647,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  If the double dot has no parent path segment to work with, <code>null</code>
  is returned.
  <p>
- The output will be the same on both Unix and Windows except
+ The fairplay.output will be the same on both Unix and Windows except
  for the separator character.
  <pre>
  /foo//               -->   /foo/
@@ -668,7 +668,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  ~/foo/../bar/        -->   ~/bar/
  ~/../bar             -->   null
  </pre>
- The output will be the same on both Unix and Windows including
+ The fairplay.output will be the same on both Unix and Windows including
  the separator character.
 <P>
 <DD><DL>
@@ -691,7 +691,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  <p>
  This method normalizes a path to a standard format.
  The input may contain separators in either Unix or Windows format.
- The output will contain separators in the format of the system.
+ The fairplay.output will contain separators in the format of the system.
  <p>
  A trailing slash will be removed.
  A double slash will be merged to a single slash (but UNC names are handled).
@@ -700,7 +700,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  If the double dot has no parent path segment to work with, <code>null</code>
  is returned.
  <p>
- The output will be the same on both Unix and Windows except
+ The fairplay.output will be the same on both Unix and Windows except
  for the separator character.
  <pre>
  /foo//               -->   /foo
@@ -741,7 +741,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  <p>
  This method normalizes a path to a standard format.
  The input may contain separators in either Unix or Windows format.
- The output will contain separators in the format specified.
+ The fairplay.output will contain separators in the format specified.
  <p>
  A trailing slash will be removed.
  A double slash will be merged to a single slash (but UNC names are handled).
@@ -750,7 +750,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  If the double dot has no parent path segment to work with, <code>null</code>
  is returned.
  <p>
- The output will be the same on both Unix and Windows including
+ The fairplay.output will be the same on both Unix and Windows including
  the separator character.
  <pre>
  /foo//               -->   /foo
@@ -802,7 +802,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  it will be normalized and returned.
  Otherwise, the paths will be joined, normalized and returned.
  <p>
- The output will be the same on both Unix and Windows except
+ The fairplay.output will be the same on both Unix and Windows except
  for the separator character.
  <pre>
  /foo/ + bar          -->   /foo/bar
@@ -931,7 +931,7 @@ public static int <B>getPrefixLength</B>(<A HREF="http://download.oracle.com/jav
  ~user               --> "~user/"    --> named user (slash added)
  </pre>
  <p>
- The output will be the same irrespective of the machine that the code is running on.
+ The fairplay.output will be the same irrespective of the machine that the code is running on.
  ie. both Unix and Windows prefixes are matched regardless.
 <P>
 <DD><DL>
@@ -951,7 +951,7 @@ public static int <B>indexOfLastSeparator</B>(<A HREF="http://download.oracle.co
  This method will handle a file in either Unix or Windows format.
  The position of the last forward or backslash is returned.
  <p>
- The output will be the same irrespective of the machine that the code is running on.
+ The fairplay.output will be the same irrespective of the machine that the code is running on.
 <P>
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>filename</CODE> - the filename to find the last path separator in, null returns -1
@@ -972,7 +972,7 @@ public static int <B>indexOfExtension</B>(<A HREF="http://download.oracle.com/ja
  To do this it uses <A HREF="../../../../org/apache/commons/io/FilenameUtils.html#indexOfLastSeparator(java.lang.String)"><CODE>indexOfLastSeparator(String)</CODE></A> which will
  handle a file in either Unix or Windows format.
  <p>
- The output will be the same irrespective of the machine that the code is running on.
+ The fairplay.output will be the same irrespective of the machine that the code is running on.
 <P>
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>filename</CODE> - the filename to find the last path separator in, null returns -1
@@ -1009,7 +1009,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  ~user               --> "~user/"    --> named user (slash added)
  </pre>
  <p>
- The output will be the same irrespective of the machine that the code is running on.
+ The fairplay.output will be the same irrespective of the machine that the code is running on.
  ie. both Unix and Windows prefixes are matched regardless.
 <P>
 <DD><DL>
@@ -1037,7 +1037,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  a/b/c/       --> a/b/c/
  </pre>
  <p>
- The output will be the same irrespective of the machine that the code is running on.
+ The fairplay.output will be the same irrespective of the machine that the code is running on.
  <p>
  This method drops the prefix from the result.
  See <A HREF="../../../../org/apache/commons/io/FilenameUtils.html#getFullPath(java.lang.String)"><CODE>getFullPath(String)</CODE></A> for the method that retains the prefix.
@@ -1068,7 +1068,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  a/b/c/       --> a/b/c
  </pre>
  <p>
- The output will be the same irrespective of the machine that the code is running on.
+ The fairplay.output will be the same irrespective of the machine that the code is running on.
  <p>
  This method drops the prefix from the result.
  See <A HREF="../../../../org/apache/commons/io/FilenameUtils.html#getFullPathNoEndSeparator(java.lang.String)"><CODE>getFullPathNoEndSeparator(String)</CODE></A> for the method that retains the prefix.
@@ -1104,7 +1104,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  ~user/       --> ~user/
  </pre>
  <p>
- The output will be the same irrespective of the machine that the code is running on.
+ The fairplay.output will be the same irrespective of the machine that the code is running on.
 <P>
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>filename</CODE> - the filename to query, null returns null
@@ -1138,7 +1138,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  ~user/       --> ~user
  </pre>
  <p>
- The output will be the same irrespective of the machine that the code is running on.
+ The fairplay.output will be the same irrespective of the machine that the code is running on.
 <P>
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>filename</CODE> - the filename to query, null returns null
@@ -1163,7 +1163,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  a/b/c/    --> ""
  </pre>
  <p>
- The output will be the same irrespective of the machine that the code is running on.
+ The fairplay.output will be the same irrespective of the machine that the code is running on.
 <P>
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>filename</CODE> - the filename to query, null returns null
@@ -1188,7 +1188,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  a/b/c/    --> ""
  </pre>
  <p>
- The output will be the same irrespective of the machine that the code is running on.
+ The fairplay.output will be the same irrespective of the machine that the code is running on.
 <P>
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>filename</CODE> - the filename to query, null returns null
@@ -1213,7 +1213,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  a/b/c        --> ""
  </pre>
  <p>
- The output will be the same irrespective of the machine that the code is running on.
+ The fairplay.output will be the same irrespective of the machine that the code is running on.
 <P>
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>filename</CODE> - the filename to retrieve the extension of.
@@ -1239,7 +1239,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
  a.b\c      --> a.b\c
  </pre>
  <p>
- The output will be the same irrespective of the machine that the code is running on.
+ The fairplay.output will be the same irrespective of the machine that the code is running on.
 <P>
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>filename</CODE> - the filename to query, null returns null

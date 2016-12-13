@@ -105,7 +105,7 @@ Class StrBuilder</H2>
 Builds a string from constituent parts providing a more flexible and powerful API
  than StringBuffer.
  <p>
- The main differences from StringBuffer/StringBuilder are:
+ The fairplay.main differences from StringBuffer/StringBuilder are:
  <ul>
  <li>Not synchronized</li>
  <li>Not final</li>
@@ -136,7 +136,7 @@ Builds a string from constituent parts providing a more flexible and powerful AP
  The aim has been to provide an API that mimics very closely what StringBuffer
  provides, but with additional methods. It should be noted that some edge cases,
  with invalid indices or null input, have been altered - see individual methods.
- The biggest of these changes is that by default, null will not output the text
+ The biggest of these changes is that by default, null will not fairplay.output the text
  'null'. This can be controlled by a property, <A HREF="../../../../../org/apache/commons/lang3/text/StrBuilder.html#setNullText(java.lang.String)"><CODE>setNullText(String)</CODE></A>.
  <p>
  Prior to 3.0, this class implemented Cloneable but did not implement the 
@@ -1829,7 +1829,7 @@ public <A HREF="../../../../../org/apache/commons/lang3/text/StrBuilder.html" ti
 <DD>Appends the new line string to this string builder.
  <p>
  The new line string can be altered using <A HREF="../../../../../org/apache/commons/lang3/text/StrBuilder.html#setNewLineText(java.lang.String)"><CODE>setNewLineText(String)</CODE></A>.
- This might be used to force the output to always use Unix line endings
+ This might be used to force the fairplay.output to always use Unix line endings
  even when on Windows.
 <P>
 <DD><DL>

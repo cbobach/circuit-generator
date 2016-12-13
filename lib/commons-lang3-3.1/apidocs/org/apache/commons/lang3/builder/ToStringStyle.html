@@ -106,7 +106,7 @@ Class ToStringStyle</H2>
 
 <P>
 <p>Controls <code>String</code> formatting for <A HREF="../../../../../org/apache/commons/lang3/builder/ToStringBuilder.html" title="class in org.apache.commons.lang3.builder"><CODE>ToStringBuilder</CODE></A>.
- The main public interface is always via <code>ToStringBuilder</code>.</p>
+ The fairplay.main public interface is always via <code>ToStringBuilder</code>.</p>
 
  <p>These classes are intended to be used as <code>Singletons</code>.
  There is no need to instantiate a new style each time. A program
@@ -118,13 +118,13 @@ Class ToStringStyle</H2>
  <p>If required, a subclass can override as many or as few of the
  methods as it requires. Each object type (from <code>boolean</code>
  to <code>long</code> to <code>Object</code> to <code>int[]</code>) has
- its own methods to output it. Most have two versions, detail and summary.
+ its own methods to fairplay.output it. Most have two versions, detail and summary.
 
  <p>For example, the detail version of the array based methods will
- output the whole array, whereas the summary method will just output
+ fairplay.output the whole array, whereas the summary method will just fairplay.output
  the array length.</p>
 
- <p>If you want to format the output of certain objects, such as dates, you
+ <p>If you want to format the fairplay.output of certain objects, such as dates, you
  must create a subclass and override a method.
  <pre>
  public class MyStyle extends ToStringStyle {
@@ -962,7 +962,7 @@ Class ToStringStyle</H2>
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html#getNullText()">getNullText</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the text to output when <code>null</code> found.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the text to fairplay.output when <code>null</code> found.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -978,8 +978,8 @@ Class ToStringStyle</H2>
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html#getSizeEndText()">getSizeEndText</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the end text to output when a <code>Collection</code>,
- <code>Map</code> or array size is output.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the end text to fairplay.output when a <code>Collection</code>,
+ <code>Map</code> or array size is fairplay.output.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -987,8 +987,8 @@ Class ToStringStyle</H2>
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html#getSizeStartText()">getSizeStartText</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the start text to output when a <code>Collection</code>,
- <code>Map</code> or array size is output.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the start text to fairplay.output when a <code>Collection</code>,
+ <code>Map</code> or array size is fairplay.output.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -996,8 +996,8 @@ Class ToStringStyle</H2>
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html#getSummaryObjectEndText()">getSummaryObjectEndText</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the end text to output when an <code>Object</code> is
- output in summary mode.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the end text to fairplay.output when an <code>Object</code> is
+ fairplay.output in summary mode.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -1005,8 +1005,8 @@ Class ToStringStyle</H2>
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html#getSummaryObjectStartText()">getSummaryObjectStartText</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the start text to output when an <code>Object</code> is
- output in summary mode.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the start text to fairplay.output when an <code>Object</code> is
+ fairplay.output in summary mode.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -1014,7 +1014,7 @@ Class ToStringStyle</H2>
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html#isArrayContentDetail()">isArrayContentDetail</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets whether to output array content detail.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets whether to fairplay.output array content detail.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -1049,7 +1049,7 @@ Class ToStringStyle</H2>
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html#isFullDetail(java.lang.Boolean)">isFullDetail</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Boolean.html" title="class or interface in java.lang">Boolean</A>&nbsp;fullDetailRequest)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is this field to be output in full detail.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is this field to be fairplay.output in full detail.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -1081,7 +1081,7 @@ Class ToStringStyle</H2>
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html#isUseShortClassName()">isUseShortClassName</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets whether to output short or long class names.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets whether to fairplay.output short or long class names.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -1107,7 +1107,7 @@ Class ToStringStyle</H2>
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html#setArrayContentDetail(boolean)">setArrayContentDetail</A></B>(boolean&nbsp;arrayContentDetail)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets whether to output array content detail.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets whether to fairplay.output array content detail.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -1198,7 +1198,7 @@ Class ToStringStyle</H2>
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html#setNullText(java.lang.String)">setNullText</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;nullText)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the text to output when <code>null</code> found.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the text to fairplay.output when <code>null</code> found.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -1206,8 +1206,8 @@ Class ToStringStyle</H2>
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html#setSizeEndText(java.lang.String)">setSizeEndText</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;sizeEndText)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the end text to output when a <code>Collection</code>,
- <code>Map</code> or array size is output.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the end text to fairplay.output when a <code>Collection</code>,
+ <code>Map</code> or array size is fairplay.output.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -1215,8 +1215,8 @@ Class ToStringStyle</H2>
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html#setSizeStartText(java.lang.String)">setSizeStartText</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;sizeStartText)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the start text to output when a <code>Collection</code>,
- <code>Map</code> or array size is output.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the start text to fairplay.output when a <code>Collection</code>,
+ <code>Map</code> or array size is fairplay.output.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -1224,8 +1224,8 @@ Class ToStringStyle</H2>
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html#setSummaryObjectEndText(java.lang.String)">setSummaryObjectEndText</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;summaryObjectEndText)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the end text to output when an <code>Object</code> is
- output in summary mode.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the end text to fairplay.output when an <code>Object</code> is
+ fairplay.output in summary mode.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -1233,8 +1233,8 @@ Class ToStringStyle</H2>
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html#setSummaryObjectStartText(java.lang.String)">setSummaryObjectStartText</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;summaryObjectStartText)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the start text to output when an <code>Object</code> is
- output in summary mode.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the start text to fairplay.output when an <code>Object</code> is
+ fairplay.output in summary mode.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -1266,7 +1266,7 @@ Class ToStringStyle</H2>
 <TD><CODE><B><A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html#setUseShortClassName(boolean)">setUseShortClassName</A></B>(boolean&nbsp;useShortClassName)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets whether to output short or long class names.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets whether to fairplay.output short or long class names.</TD>
 </TR>
 </TABLE>
 &nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
@@ -1297,7 +1297,7 @@ DEFAULT_STYLE</H3>
 public static final <A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html" title="class in org.apache.commons.lang3.builder">ToStringStyle</A> <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.81"><B>DEFAULT_STYLE</B></A></PRE>
 <DL>
 <DD>The default toString style. Using the Using the <code>Person</code>
- example from <A HREF="../../../../../org/apache/commons/lang3/builder/ToStringBuilder.html" title="class in org.apache.commons.lang3.builder"><CODE>ToStringBuilder</CODE></A>, the output would look like this:
+ example from <A HREF="../../../../../org/apache/commons/lang3/builder/ToStringBuilder.html" title="class in org.apache.commons.lang3.builder"><CODE>ToStringBuilder</CODE></A>, the fairplay.output would look like this:
 
  <pre>
  Person@182f0db[name=John Doe,age=33,smoker=false]
@@ -1314,7 +1314,7 @@ MULTI_LINE_STYLE</H3>
 public static final <A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html" title="class in org.apache.commons.lang3.builder">ToStringStyle</A> <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.95"><B>MULTI_LINE_STYLE</B></A></PRE>
 <DL>
 <DD>The multi line toString style. Using the Using the <code>Person</code>
- example from <A HREF="../../../../../org/apache/commons/lang3/builder/ToStringBuilder.html" title="class in org.apache.commons.lang3.builder"><CODE>ToStringBuilder</CODE></A>, the output would look like this:
+ example from <A HREF="../../../../../org/apache/commons/lang3/builder/ToStringBuilder.html" title="class in org.apache.commons.lang3.builder"><CODE>ToStringBuilder</CODE></A>, the fairplay.output would look like this:
 
  <pre>
  Person@182f0db[
@@ -1335,7 +1335,7 @@ NO_FIELD_NAMES_STYLE</H3>
 public static final <A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html" title="class in org.apache.commons.lang3.builder">ToStringStyle</A> <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.106"><B>NO_FIELD_NAMES_STYLE</B></A></PRE>
 <DL>
 <DD>The no field names toString style. Using the Using the
- <code>Person</code> example from <A HREF="../../../../../org/apache/commons/lang3/builder/ToStringBuilder.html" title="class in org.apache.commons.lang3.builder"><CODE>ToStringBuilder</CODE></A>, the output
+ <code>Person</code> example from <A HREF="../../../../../org/apache/commons/lang3/builder/ToStringBuilder.html" title="class in org.apache.commons.lang3.builder"><CODE>ToStringBuilder</CODE></A>, the fairplay.output
  would look like this:
 
  <pre>
@@ -1353,7 +1353,7 @@ SHORT_PREFIX_STYLE</H3>
 public static final <A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html" title="class in org.apache.commons.lang3.builder">ToStringStyle</A> <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.118"><B>SHORT_PREFIX_STYLE</B></A></PRE>
 <DL>
 <DD>The short prefix toString style. Using the <code>Person</code> example
- from <A HREF="../../../../../org/apache/commons/lang3/builder/ToStringBuilder.html" title="class in org.apache.commons.lang3.builder"><CODE>ToStringBuilder</CODE></A>, the output would look like this:
+ from <A HREF="../../../../../org/apache/commons/lang3/builder/ToStringBuilder.html" title="class in org.apache.commons.lang3.builder"><CODE>ToStringBuilder</CODE></A>, the fairplay.output would look like this:
 
  <pre>
  Person[name=John Doe,age=33,smoker=false]
@@ -1372,7 +1372,7 @@ SIMPLE_STYLE</H3>
 public static final <A HREF="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html" title="class in org.apache.commons.lang3.builder">ToStringStyle</A> <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.128"><B>SIMPLE_STYLE</B></A></PRE>
 <DL>
 <DD>The simple toString style. Using the Using the <code>Person</code>
- example from <A HREF="../../../../../org/apache/commons/lang3/builder/ToStringBuilder.html" title="class in org.apache.commons.lang3.builder"><CODE>ToStringBuilder</CODE></A>, the output would look like this:
+ example from <A HREF="../../../../../org/apache/commons/lang3/builder/ToStringBuilder.html" title="class in org.apache.commons.lang3.builder"><CODE>ToStringBuilder</CODE></A>, the fairplay.output would look like this:
 
  <pre>
  John Doe,33,false
@@ -1541,7 +1541,7 @@ protected void <A HREF="../../../../../src-html/org/apache/commons/lang3/builder
 <DD><p>Append to the <code>toString</code> an <code>Object</code>,
  correctly interpreting its type.</p>
 
- <p>This method performs the main lookup by Class type to correctly
+ <p>This method performs the fairplay.main lookup by Class type to correctly
  route arrays, <code>Collections</code>, <code>Maps</code> and
  <code>Objects</code> to the appropriate method.</p>
 
@@ -1555,7 +1555,7 @@ protected void <A HREF="../../../../../src-html/org/apache/commons/lang3/builder
 </DD>
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>buffer</CODE> - the <code>StringBuffer</code> to populate<DD><CODE>fieldName</CODE> - the field name, typically not used as already appended<DD><CODE>value</CODE> - the value to add to the <code>toString</code>,
-  not <code>null</code><DD><CODE>detail</CODE> - output detail or not</DL>
+  not <code>null</code><DD><CODE>detail</CODE> - fairplay.output detail or not</DL>
 </DD>
 </DL>
 <HR>
@@ -2547,7 +2547,7 @@ protected void <A HREF="../../../../../src-html/org/apache/commons/lang3/builder
 </DL>
 </DD>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>buffer</CODE> - the <code>StringBuffer</code> to populate<DD><CODE>object</CODE> - the <code>Object</code> whose name to output</DL>
+<DT><B>Parameters:</B><DD><CODE>buffer</CODE> - the <code>StringBuffer</code> to populate<DD><CODE>object</CODE> - the <code>Object</code> whose name to fairplay.output</DL>
 </DD>
 </DL>
 <HR>
@@ -2564,7 +2564,7 @@ protected void <A HREF="../../../../../src-html/org/apache/commons/lang3/builder
 </DL>
 </DD>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>buffer</CODE> - the <code>StringBuffer</code> to populate<DD><CODE>object</CODE> - the <code>Object</code> whose id to output</DL>
+<DT><B>Parameters:</B><DD><CODE>buffer</CODE> - the <code>StringBuffer</code> to populate<DD><CODE>object</CODE> - the <code>Object</code> whose id to fairplay.output</DL>
 </DD>
 </DL>
 <HR>
@@ -2682,7 +2682,7 @@ protected void <A HREF="../../../../../src-html/org/apache/commons/lang3/builder
  <p>The size summary is used to summarize the contents of
  <code>Collections</code>, <code>Maps</code> and arrays.</p>
 
- <p>The output consists of a prefix, the passed in size
+ <p>The fairplay.output consists of a prefix, the passed in size
  and a suffix.</p>
 
  <p>The default format is <code>'&lt;size=n&gt;'<code>.</p>
@@ -2701,7 +2701,7 @@ isFullDetail</H3>
 <PRE>
 protected boolean <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.1564"><B>isFullDetail</B></A>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Boolean.html" title="class or interface in java.lang">Boolean</A>&nbsp;fullDetailRequest)</PRE>
 <DL>
-<DD><p>Is this field to be output in full detail.</p>
+<DD><p>Is this field to be fairplay.output in full detail.</p>
 
  <p>This method converts a detail request into a detail level.
  The calling code may request full detail (<code>true</code>),
@@ -2779,7 +2779,7 @@ isUseShortClassName</H3>
 <PRE>
 protected boolean <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.1615"><B>isUseShortClassName</B></A>()</PRE>
 <DL>
-<DD><p>Gets whether to output short or long class names.</p>
+<DD><p>Gets whether to fairplay.output short or long class names.</p>
 <P>
 <DD><DL>
 </DL>
@@ -2798,7 +2798,7 @@ setUseShortClassName</H3>
 <PRE>
 protected void <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.1625"><B>setUseShortClassName</B></A>(boolean&nbsp;useShortClassName)</PRE>
 <DL>
-<DD><p>Sets whether to output short or long class names.</p>
+<DD><p>Sets whether to fairplay.output short or long class names.</p>
 <P>
 <DD><DL>
 </DL>
@@ -2917,7 +2917,7 @@ isArrayContentDetail</H3>
 <PRE>
 protected boolean <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.1698"><B>isArrayContentDetail</B></A>()</PRE>
 <DL>
-<DD><p>Gets whether to output array content detail.</p>
+<DD><p>Gets whether to fairplay.output array content detail.</p>
 <P>
 <DD><DL>
 </DL>
@@ -2934,7 +2934,7 @@ setArrayContentDetail</H3>
 <PRE>
 protected void <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.1707"><B>setArrayContentDetail</B></A>(boolean&nbsp;arrayContentDetail)</PRE>
 <DL>
-<DD><p>Sets whether to output array content detail.</p>
+<DD><p>Sets whether to fairplay.output array content detail.</p>
 <P>
 <DD><DL>
 </DL>
@@ -3280,14 +3280,14 @@ getNullText</H3>
 <PRE>
 protected <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A> <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.1948"><B>getNullText</B></A>()</PRE>
 <DL>
-<DD><p>Gets the text to output when <code>null</code> found.</p>
+<DD><p>Gets the text to fairplay.output when <code>null</code> found.</p>
 <P>
 <DD><DL>
 </DL>
 </DD>
 <DD><DL>
 
-<DT><B>Returns:</B><DD>the current text to output when null found</DL>
+<DT><B>Returns:</B><DD>the current text to fairplay.output when null found</DL>
 </DD>
 </DL>
 <HR>
@@ -3297,7 +3297,7 @@ setNullText</H3>
 <PRE>
 protected void <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.1960"><B>setNullText</B></A>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;nullText)</PRE>
 <DL>
-<DD><p>Sets the text to output when <code>null</code> found.</p>
+<DD><p>Sets the text to fairplay.output when <code>null</code> found.</p>
 
  <p><code>null</code> is accepted, but will be converted to
  an empty String.</p>
@@ -3306,7 +3306,7 @@ protected void <A HREF="../../../../../src-html/org/apache/commons/lang3/builder
 </DL>
 </DD>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>nullText</CODE> - the new text to output when null found</DL>
+<DT><B>Parameters:</B><DD><CODE>nullText</CODE> - the new text to fairplay.output when null found</DL>
 </DD>
 </DL>
 <HR>
@@ -3316,10 +3316,10 @@ getSizeStartText</H3>
 <PRE>
 protected <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A> <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.1977"><B>getSizeStartText</B></A>()</PRE>
 <DL>
-<DD><p>Gets the start text to output when a <code>Collection</code>,
- <code>Map</code> or array size is output.</p>
+<DD><p>Gets the start text to fairplay.output when a <code>Collection</code>,
+ <code>Map</code> or array size is fairplay.output.</p>
 
- <p>This is output before the size value.</p>
+ <p>This is fairplay.output before the size value.</p>
 <P>
 <DD><DL>
 </DL>
@@ -3336,10 +3336,10 @@ setSizeStartText</H3>
 <PRE>
 protected void <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.1992"><B>setSizeStartText</B></A>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;sizeStartText)</PRE>
 <DL>
-<DD><p>Sets the start text to output when a <code>Collection</code>,
- <code>Map</code> or array size is output.</p>
+<DD><p>Sets the start text to fairplay.output when a <code>Collection</code>,
+ <code>Map</code> or array size is fairplay.output.</p>
 
- <p>This is output before the size value.</p>
+ <p>This is fairplay.output before the size value.</p>
 
  <p><code>null</code> is accepted, but will be converted to
  an empty String.</p>
@@ -3358,10 +3358,10 @@ getSizeEndText</H3>
 <PRE>
 protected <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A> <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.2009"><B>getSizeEndText</B></A>()</PRE>
 <DL>
-<DD><p>Gets the end text to output when a <code>Collection</code>,
- <code>Map</code> or array size is output.</p>
+<DD><p>Gets the end text to fairplay.output when a <code>Collection</code>,
+ <code>Map</code> or array size is fairplay.output.</p>
 
- <p>This is output after the size value.</p>
+ <p>This is fairplay.output after the size value.</p>
 <P>
 <DD><DL>
 </DL>
@@ -3378,10 +3378,10 @@ setSizeEndText</H3>
 <PRE>
 protected void <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.2024"><B>setSizeEndText</B></A>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;sizeEndText)</PRE>
 <DL>
-<DD><p>Sets the end text to output when a <code>Collection</code>,
- <code>Map</code> or array size is output.</p>
+<DD><p>Sets the end text to fairplay.output when a <code>Collection</code>,
+ <code>Map</code> or array size is fairplay.output.</p>
 
- <p>This is output after the size value.</p>
+ <p>This is fairplay.output after the size value.</p>
 
  <p><code>null</code> is accepted, but will be converted to
  an empty String.</p>
@@ -3400,10 +3400,10 @@ getSummaryObjectStartText</H3>
 <PRE>
 protected <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A> <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.2041"><B>getSummaryObjectStartText</B></A>()</PRE>
 <DL>
-<DD><p>Gets the start text to output when an <code>Object</code> is
- output in summary mode.</p>
+<DD><p>Gets the start text to fairplay.output when an <code>Object</code> is
+ fairplay.output in summary mode.</p>
 
- <p>This is output before the size value.</p>
+ <p>This is fairplay.output before the size value.</p>
 <P>
 <DD><DL>
 </DL>
@@ -3420,10 +3420,10 @@ setSummaryObjectStartText</H3>
 <PRE>
 protected void <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.2056"><B>setSummaryObjectStartText</B></A>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;summaryObjectStartText)</PRE>
 <DL>
-<DD><p>Sets the start text to output when an <code>Object</code> is
- output in summary mode.</p>
+<DD><p>Sets the start text to fairplay.output when an <code>Object</code> is
+ fairplay.output in summary mode.</p>
 
- <p>This is output before the size value.</p>
+ <p>This is fairplay.output before the size value.</p>
 
  <p><code>null</code> is accepted, but will be converted to
  an empty String.</p>
@@ -3442,10 +3442,10 @@ getSummaryObjectEndText</H3>
 <PRE>
 protected <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A> <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.2073"><B>getSummaryObjectEndText</B></A>()</PRE>
 <DL>
-<DD><p>Gets the end text to output when an <code>Object</code> is
- output in summary mode.</p>
+<DD><p>Gets the end text to fairplay.output when an <code>Object</code> is
+ fairplay.output in summary mode.</p>
 
- <p>This is output after the size value.</p>
+ <p>This is fairplay.output after the size value.</p>
 <P>
 <DD><DL>
 </DL>
@@ -3462,10 +3462,10 @@ setSummaryObjectEndText</H3>
 <PRE>
 protected void <A HREF="../../../../../src-html/org/apache/commons/lang3/builder/ToStringStyle.html#line.2088"><B>setSummaryObjectEndText</B></A>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;summaryObjectEndText)</PRE>
 <DL>
-<DD><p>Sets the end text to output when an <code>Object</code> is
- output in summary mode.</p>
+<DD><p>Sets the end text to fairplay.output when an <code>Object</code> is
+ fairplay.output in summary mode.</p>
 
- <p>This is output after the size value.</p>
+ <p>This is fairplay.output after the size value.</p>
 
  <p><code>null</code> is accepted, but will be converted to
  an empty String.</p>

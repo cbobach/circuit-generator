@@ -31,7 +31,7 @@
 <FONT color="green">028</FONT>     * &lt;p&gt;A suite of utilities surrounding the use of the<a name="line.28"></a>
 <FONT color="green">029</FONT>     * {@link java.util.Calendar} and {@link java.util.Date} object.&lt;/p&gt;<a name="line.29"></a>
 <FONT color="green">030</FONT>     * <a name="line.30"></a>
-<FONT color="green">031</FONT>     * &lt;p&gt;DateUtils contains a lot of common methods considering manipulations<a name="line.31"></a>
+<FONT color="green">031</FONT>     * &lt;p&gt;DateUtils contains a lot of fairplay.common methods considering manipulations<a name="line.31"></a>
 <FONT color="green">032</FONT>     * of Dates or Calendars. Some methods require some extra explanation.<a name="line.32"></a>
 <FONT color="green">033</FONT>     * The truncate, ceiling and round methods could be considered the Math.floor(),<a name="line.33"></a>
 <FONT color="green">034</FONT>     * Math.ceil() or Math.round versions for dates<a name="line.34"></a>
@@ -252,7 +252,7 @@
 <FONT color="green">249</FONT>    <a name="line.249"></a>
 <FONT color="green">250</FONT>        //-----------------------------------------------------------------------<a name="line.250"></a>
 <FONT color="green">251</FONT>        /**<a name="line.251"></a>
-<FONT color="green">252</FONT>         * &lt;p&gt;Parses a string representing a date by trying a variety of different parsers.&lt;/p&gt;<a name="line.252"></a>
+<FONT color="green">252</FONT>         * &lt;p&gt;Parses a string representing a date by trying a variety of different fairplay.parsers.&lt;/p&gt;<a name="line.252"></a>
 <FONT color="green">253</FONT>         * <a name="line.253"></a>
 <FONT color="green">254</FONT>         * &lt;p&gt;The parse will try each parse pattern in turn.<a name="line.254"></a>
 <FONT color="green">255</FONT>         * A parse is only deemed successful if it parses the whole of the input string.<a name="line.255"></a>
@@ -271,7 +271,7 @@
 <FONT color="green">268</FONT>        <a name="line.268"></a>
 <FONT color="green">269</FONT>      //-----------------------------------------------------------------------<a name="line.269"></a>
 <FONT color="green">270</FONT>        /**<a name="line.270"></a>
-<FONT color="green">271</FONT>         * &lt;p&gt;Parses a string representing a date by trying a variety of different parsers.&lt;/p&gt;<a name="line.271"></a>
+<FONT color="green">271</FONT>         * &lt;p&gt;Parses a string representing a date by trying a variety of different fairplay.parsers.&lt;/p&gt;<a name="line.271"></a>
 <FONT color="green">272</FONT>         * <a name="line.272"></a>
 <FONT color="green">273</FONT>         * &lt;p&gt;The parse will try each parse pattern in turn.<a name="line.273"></a>
 <FONT color="green">274</FONT>         * A parse is only deemed successful if it parses the whole of the input string.<a name="line.274"></a>
@@ -290,7 +290,7 @@
 <FONT color="green">287</FONT>        }<a name="line.287"></a>
 <FONT color="green">288</FONT>    <a name="line.288"></a>
 <FONT color="green">289</FONT>        /**<a name="line.289"></a>
-<FONT color="green">290</FONT>         * &lt;p&gt;Parses a string representing a date by trying a variety of different parsers.&lt;/p&gt;<a name="line.290"></a>
+<FONT color="green">290</FONT>         * &lt;p&gt;Parses a string representing a date by trying a variety of different fairplay.parsers.&lt;/p&gt;<a name="line.290"></a>
 <FONT color="green">291</FONT>         * <a name="line.291"></a>
 <FONT color="green">292</FONT>         * &lt;p&gt;The parse will try each parse pattern in turn.<a name="line.292"></a>
 <FONT color="green">293</FONT>         * A parse is only deemed successful if it parses the whole of the input string.<a name="line.293"></a>
@@ -317,7 +317,7 @@
 <FONT color="green">314</FONT>    <a name="line.314"></a>
 <FONT color="green">315</FONT>                String pattern = parsePattern;<a name="line.315"></a>
 <FONT color="green">316</FONT>    <a name="line.316"></a>
-<FONT color="green">317</FONT>                // LANG-530 - need to make sure 'ZZ' output doesn't get passed to SimpleDateFormat<a name="line.317"></a>
+<FONT color="green">317</FONT>                // LANG-530 - need to make sure 'ZZ' fairplay.output doesn't get passed to SimpleDateFormat<a name="line.317"></a>
 <FONT color="green">318</FONT>                if (parsePattern.endsWith("ZZ")) {<a name="line.318"></a>
 <FONT color="green">319</FONT>                    pattern = pattern.substring(0, pattern.length() - 1);<a name="line.319"></a>
 <FONT color="green">320</FONT>                }<a name="line.320"></a>
@@ -326,7 +326,7 @@
 <FONT color="green">323</FONT>                pos.setIndex(0);<a name="line.323"></a>
 <FONT color="green">324</FONT>    <a name="line.324"></a>
 <FONT color="green">325</FONT>                String str2 = str;<a name="line.325"></a>
-<FONT color="green">326</FONT>                // LANG-530 - need to make sure 'ZZ' output doesn't hit SimpleDateFormat as it will ParseException<a name="line.326"></a>
+<FONT color="green">326</FONT>                // LANG-530 - need to make sure 'ZZ' fairplay.output doesn't hit SimpleDateFormat as it will ParseException<a name="line.326"></a>
 <FONT color="green">327</FONT>                if (parsePattern.endsWith("ZZ")) {<a name="line.327"></a>
 <FONT color="green">328</FONT>                    str2 = str.replaceAll("([-+][0-9][0-9]):([0-9][0-9])$", "$1$2"); <a name="line.328"></a>
 <FONT color="green">329</FONT>                }<a name="line.329"></a>

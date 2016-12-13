@@ -903,9 +903,9 @@
 <FONT color="green">900</FONT>            int estimateLength();<a name="line.900"></a>
 <FONT color="green">901</FONT>    <a name="line.901"></a>
 <FONT color="green">902</FONT>            /**<a name="line.902"></a>
-<FONT color="green">903</FONT>             * Appends the value of the specified calendar to the output buffer based on the rule implementation.<a name="line.903"></a>
+<FONT color="green">903</FONT>             * Appends the value of the specified calendar to the fairplay.output buffer based on the rule implementation.<a name="line.903"></a>
 <FONT color="green">904</FONT>             *<a name="line.904"></a>
-<FONT color="green">905</FONT>             * @param buffer the output buffer<a name="line.905"></a>
+<FONT color="green">905</FONT>             * @param buffer the fairplay.output buffer<a name="line.905"></a>
 <FONT color="green">906</FONT>             * @param calendar calendar to be appended<a name="line.906"></a>
 <FONT color="green">907</FONT>             */<a name="line.907"></a>
 <FONT color="green">908</FONT>            void appendTo(StringBuffer buffer, Calendar calendar);<a name="line.908"></a>
@@ -916,16 +916,16 @@
 <FONT color="green">913</FONT>         */<a name="line.913"></a>
 <FONT color="green">914</FONT>        private interface NumberRule extends Rule {<a name="line.914"></a>
 <FONT color="green">915</FONT>            /**<a name="line.915"></a>
-<FONT color="green">916</FONT>             * Appends the specified value to the output buffer based on the rule implementation.<a name="line.916"></a>
+<FONT color="green">916</FONT>             * Appends the specified value to the fairplay.output buffer based on the rule implementation.<a name="line.916"></a>
 <FONT color="green">917</FONT>             *<a name="line.917"></a>
-<FONT color="green">918</FONT>             * @param buffer the output buffer<a name="line.918"></a>
+<FONT color="green">918</FONT>             * @param buffer the fairplay.output buffer<a name="line.918"></a>
 <FONT color="green">919</FONT>             * @param value the value to be appended<a name="line.919"></a>
 <FONT color="green">920</FONT>             */<a name="line.920"></a>
 <FONT color="green">921</FONT>            void appendTo(StringBuffer buffer, int value);<a name="line.921"></a>
 <FONT color="green">922</FONT>        }<a name="line.922"></a>
 <FONT color="green">923</FONT>    <a name="line.923"></a>
 <FONT color="green">924</FONT>        /**<a name="line.924"></a>
-<FONT color="green">925</FONT>         * &lt;p&gt;Inner class to output a constant single character.&lt;/p&gt;<a name="line.925"></a>
+<FONT color="green">925</FONT>         * &lt;p&gt;Inner class to fairplay.output a constant single character.&lt;/p&gt;<a name="line.925"></a>
 <FONT color="green">926</FONT>         */<a name="line.926"></a>
 <FONT color="green">927</FONT>        private static class CharacterLiteral implements Rule {<a name="line.927"></a>
 <FONT color="green">928</FONT>            private final char mValue;<a name="line.928"></a>
@@ -956,7 +956,7 @@
 <FONT color="green">953</FONT>        }<a name="line.953"></a>
 <FONT color="green">954</FONT>    <a name="line.954"></a>
 <FONT color="green">955</FONT>        /**<a name="line.955"></a>
-<FONT color="green">956</FONT>         * &lt;p&gt;Inner class to output a constant string.&lt;/p&gt;<a name="line.956"></a>
+<FONT color="green">956</FONT>         * &lt;p&gt;Inner class to fairplay.output a constant string.&lt;/p&gt;<a name="line.956"></a>
 <FONT color="green">957</FONT>         */<a name="line.957"></a>
 <FONT color="green">958</FONT>        private static class StringLiteral implements Rule {<a name="line.958"></a>
 <FONT color="green">959</FONT>            private final String mValue;<a name="line.959"></a>
@@ -987,7 +987,7 @@
 <FONT color="green">984</FONT>        }<a name="line.984"></a>
 <FONT color="green">985</FONT>    <a name="line.985"></a>
 <FONT color="green">986</FONT>        /**<a name="line.986"></a>
-<FONT color="green">987</FONT>         * &lt;p&gt;Inner class to output one of a set of values.&lt;/p&gt;<a name="line.987"></a>
+<FONT color="green">987</FONT>         * &lt;p&gt;Inner class to fairplay.output one of a set of values.&lt;/p&gt;<a name="line.987"></a>
 <FONT color="green">988</FONT>         */<a name="line.988"></a>
 <FONT color="green">989</FONT>        private static class TextField implements Rule {<a name="line.989"></a>
 <FONT color="green">990</FONT>            private final int mField;<a name="line.990"></a>
@@ -1028,7 +1028,7 @@
 <FONT color="green">1025</FONT>        }<a name="line.1025"></a>
 <FONT color="green">1026</FONT>    <a name="line.1026"></a>
 <FONT color="green">1027</FONT>        /**<a name="line.1027"></a>
-<FONT color="green">1028</FONT>         * &lt;p&gt;Inner class to output an unpadded number.&lt;/p&gt;<a name="line.1028"></a>
+<FONT color="green">1028</FONT>         * &lt;p&gt;Inner class to fairplay.output an unpadded number.&lt;/p&gt;<a name="line.1028"></a>
 <FONT color="green">1029</FONT>         */<a name="line.1029"></a>
 <FONT color="green">1030</FONT>        private static class UnpaddedNumberField implements NumberRule {<a name="line.1030"></a>
 <FONT color="green">1031</FONT>            private final int mField;<a name="line.1031"></a>
@@ -1072,7 +1072,7 @@
 <FONT color="green">1069</FONT>        }<a name="line.1069"></a>
 <FONT color="green">1070</FONT>    <a name="line.1070"></a>
 <FONT color="green">1071</FONT>        /**<a name="line.1071"></a>
-<FONT color="green">1072</FONT>         * &lt;p&gt;Inner class to output an unpadded month.&lt;/p&gt;<a name="line.1072"></a>
+<FONT color="green">1072</FONT>         * &lt;p&gt;Inner class to fairplay.output an unpadded month.&lt;/p&gt;<a name="line.1072"></a>
 <FONT color="green">1073</FONT>         */<a name="line.1073"></a>
 <FONT color="green">1074</FONT>        private static class UnpaddedMonthField implements NumberRule {<a name="line.1074"></a>
 <FONT color="green">1075</FONT>            static final UnpaddedMonthField INSTANCE = new UnpaddedMonthField();<a name="line.1075"></a>
@@ -1113,7 +1113,7 @@
 <FONT color="green">1110</FONT>        }<a name="line.1110"></a>
 <FONT color="green">1111</FONT>    <a name="line.1111"></a>
 <FONT color="green">1112</FONT>        /**<a name="line.1112"></a>
-<FONT color="green">1113</FONT>         * &lt;p&gt;Inner class to output a padded number.&lt;/p&gt;<a name="line.1113"></a>
+<FONT color="green">1113</FONT>         * &lt;p&gt;Inner class to fairplay.output a padded number.&lt;/p&gt;<a name="line.1113"></a>
 <FONT color="green">1114</FONT>         */<a name="line.1114"></a>
 <FONT color="green">1115</FONT>        private static class PaddedNumberField implements NumberRule {<a name="line.1115"></a>
 <FONT color="green">1116</FONT>            private final int mField;<a name="line.1116"></a>
@@ -1123,7 +1123,7 @@
 <FONT color="green">1120</FONT>             * Constructs an instance of {@code PaddedNumberField}.<a name="line.1120"></a>
 <FONT color="green">1121</FONT>             *<a name="line.1121"></a>
 <FONT color="green">1122</FONT>             * @param field the field<a name="line.1122"></a>
-<FONT color="green">1123</FONT>             * @param size size of the output field<a name="line.1123"></a>
+<FONT color="green">1123</FONT>             * @param size size of the fairplay.output field<a name="line.1123"></a>
 <FONT color="green">1124</FONT>             */<a name="line.1124"></a>
 <FONT color="green">1125</FONT>            PaddedNumberField(int field, int size) {<a name="line.1125"></a>
 <FONT color="green">1126</FONT>                if (size &lt; 3) {<a name="line.1126"></a>
@@ -1175,7 +1175,7 @@
 <FONT color="green">1172</FONT>        }<a name="line.1172"></a>
 <FONT color="green">1173</FONT>    <a name="line.1173"></a>
 <FONT color="green">1174</FONT>        /**<a name="line.1174"></a>
-<FONT color="green">1175</FONT>         * &lt;p&gt;Inner class to output a two digit number.&lt;/p&gt;<a name="line.1175"></a>
+<FONT color="green">1175</FONT>         * &lt;p&gt;Inner class to fairplay.output a two digit number.&lt;/p&gt;<a name="line.1175"></a>
 <FONT color="green">1176</FONT>         */<a name="line.1176"></a>
 <FONT color="green">1177</FONT>        private static class TwoDigitNumberField implements NumberRule {<a name="line.1177"></a>
 <FONT color="green">1178</FONT>            private final int mField;<a name="line.1178"></a>
@@ -1217,7 +1217,7 @@
 <FONT color="green">1214</FONT>        }<a name="line.1214"></a>
 <FONT color="green">1215</FONT>    <a name="line.1215"></a>
 <FONT color="green">1216</FONT>        /**<a name="line.1216"></a>
-<FONT color="green">1217</FONT>         * &lt;p&gt;Inner class to output a two digit year.&lt;/p&gt;<a name="line.1217"></a>
+<FONT color="green">1217</FONT>         * &lt;p&gt;Inner class to fairplay.output a two digit year.&lt;/p&gt;<a name="line.1217"></a>
 <FONT color="green">1218</FONT>         */<a name="line.1218"></a>
 <FONT color="green">1219</FONT>        private static class TwoDigitYearField implements NumberRule {<a name="line.1219"></a>
 <FONT color="green">1220</FONT>            static final TwoDigitYearField INSTANCE = new TwoDigitYearField();<a name="line.1220"></a>
@@ -1253,7 +1253,7 @@
 <FONT color="green">1250</FONT>        }<a name="line.1250"></a>
 <FONT color="green">1251</FONT>    <a name="line.1251"></a>
 <FONT color="green">1252</FONT>        /**<a name="line.1252"></a>
-<FONT color="green">1253</FONT>         * &lt;p&gt;Inner class to output a two digit month.&lt;/p&gt;<a name="line.1253"></a>
+<FONT color="green">1253</FONT>         * &lt;p&gt;Inner class to fairplay.output a two digit month.&lt;/p&gt;<a name="line.1253"></a>
 <FONT color="green">1254</FONT>         */<a name="line.1254"></a>
 <FONT color="green">1255</FONT>        private static class TwoDigitMonthField implements NumberRule {<a name="line.1255"></a>
 <FONT color="green">1256</FONT>            static final TwoDigitMonthField INSTANCE = new TwoDigitMonthField();<a name="line.1256"></a>
@@ -1289,7 +1289,7 @@
 <FONT color="green">1286</FONT>        }<a name="line.1286"></a>
 <FONT color="green">1287</FONT>    <a name="line.1287"></a>
 <FONT color="green">1288</FONT>        /**<a name="line.1288"></a>
-<FONT color="green">1289</FONT>         * &lt;p&gt;Inner class to output the twelve hour field.&lt;/p&gt;<a name="line.1289"></a>
+<FONT color="green">1289</FONT>         * &lt;p&gt;Inner class to fairplay.output the twelve hour field.&lt;/p&gt;<a name="line.1289"></a>
 <FONT color="green">1290</FONT>         */<a name="line.1290"></a>
 <FONT color="green">1291</FONT>        private static class TwelveHourField implements NumberRule {<a name="line.1291"></a>
 <FONT color="green">1292</FONT>            private final NumberRule mRule;<a name="line.1292"></a>
@@ -1331,7 +1331,7 @@
 <FONT color="green">1328</FONT>        }<a name="line.1328"></a>
 <FONT color="green">1329</FONT>    <a name="line.1329"></a>
 <FONT color="green">1330</FONT>        /**<a name="line.1330"></a>
-<FONT color="green">1331</FONT>         * &lt;p&gt;Inner class to output the twenty four hour field.&lt;/p&gt;<a name="line.1331"></a>
+<FONT color="green">1331</FONT>         * &lt;p&gt;Inner class to fairplay.output the twenty four hour field.&lt;/p&gt;<a name="line.1331"></a>
 <FONT color="green">1332</FONT>         */<a name="line.1332"></a>
 <FONT color="green">1333</FONT>        private static class TwentyFourHourField implements NumberRule {<a name="line.1333"></a>
 <FONT color="green">1334</FONT>            private final NumberRule mRule;<a name="line.1334"></a>
@@ -1373,7 +1373,7 @@
 <FONT color="green">1370</FONT>        }<a name="line.1370"></a>
 <FONT color="green">1371</FONT>    <a name="line.1371"></a>
 <FONT color="green">1372</FONT>        /**<a name="line.1372"></a>
-<FONT color="green">1373</FONT>         * &lt;p&gt;Inner class to output a time zone name.&lt;/p&gt;<a name="line.1373"></a>
+<FONT color="green">1373</FONT>         * &lt;p&gt;Inner class to fairplay.output a time zone name.&lt;/p&gt;<a name="line.1373"></a>
 <FONT color="green">1374</FONT>         */<a name="line.1374"></a>
 <FONT color="green">1375</FONT>        private static class TimeZoneNameRule implements Rule {<a name="line.1375"></a>
 <FONT color="green">1376</FONT>            private final TimeZone mTimeZone;<a name="line.1376"></a>
@@ -1414,7 +1414,7 @@
 <FONT color="green">1411</FONT>        }<a name="line.1411"></a>
 <FONT color="green">1412</FONT>    <a name="line.1412"></a>
 <FONT color="green">1413</FONT>        /**<a name="line.1413"></a>
-<FONT color="green">1414</FONT>         * &lt;p&gt;Inner class to output a time zone as a number {@code +/-HHMM}<a name="line.1414"></a>
+<FONT color="green">1414</FONT>         * &lt;p&gt;Inner class to fairplay.output a time zone as a number {@code +/-HHMM}<a name="line.1414"></a>
 <FONT color="green">1415</FONT>         * or {@code +/-HH:MM}.&lt;/p&gt;<a name="line.1415"></a>
 <FONT color="green">1416</FONT>         */<a name="line.1416"></a>
 <FONT color="green">1417</FONT>        private static class TimeZoneNumberRule implements Rule {<a name="line.1417"></a>
@@ -1426,7 +1426,7 @@
 <FONT color="green">1423</FONT>            /**<a name="line.1423"></a>
 <FONT color="green">1424</FONT>             * Constructs an instance of {@code TimeZoneNumberRule} with the specified properties.<a name="line.1424"></a>
 <FONT color="green">1425</FONT>             *<a name="line.1425"></a>
-<FONT color="green">1426</FONT>             * @param colon add colon between HH and MM in the output if {@code true}<a name="line.1426"></a>
+<FONT color="green">1426</FONT>             * @param colon add colon between HH and MM in the fairplay.output if {@code true}<a name="line.1426"></a>
 <FONT color="green">1427</FONT>             */<a name="line.1427"></a>
 <FONT color="green">1428</FONT>            TimeZoneNumberRule(boolean colon) {<a name="line.1428"></a>
 <FONT color="green">1429</FONT>                mColon = colon;<a name="line.1429"></a>

@@ -321,7 +321,7 @@ Class ExceptionUtils</H2>
                                      <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;wrapperFrames)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes common frames from the cause trace given the two stack traces.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes fairplay.common frames from the cause trace given the two stack traces.</TD>
 </TR>
 </TABLE>
 &nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
@@ -669,14 +669,14 @@ public static void <A HREF="../../../../../src-html/org/apache/commons/lang3/exc
  Then it prints the wrapped exception and continues with stack frames
  until the wrapper exception is caught and wrapped again, etc.</p>
 
- <p>The output of this method is consistent across JDK versions.
+ <p>The fairplay.output of this method is consistent across JDK versions.
  Note that this is the opposite order to the JDK1.4 display.</p>
 
  <p>The method is equivalent to <code>printStackTrace</code> for throwables
  that don't have nested causes.</p>
 <P>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>throwable</CODE> - the throwable to output<DT><B>Since:</B></DT>
+<DT><B>Parameters:</B><DD><CODE>throwable</CODE> - the throwable to fairplay.output<DT><B>Since:</B></DT>
   <DD>2.0</DD>
 </DL>
 </DD>
@@ -696,14 +696,14 @@ public static void <A HREF="../../../../../src-html/org/apache/commons/lang3/exc
  Then it prints the wrapped exception and continues with stack frames
  until the wrapper exception is caught and wrapped again, etc.</p>
 
- <p>The output of this method is consistent across JDK versions.
+ <p>The fairplay.output of this method is consistent across JDK versions.
  Note that this is the opposite order to the JDK1.4 display.</p>
 
  <p>The method is equivalent to <code>printStackTrace</code> for throwables
  that don't have nested causes.</p>
 <P>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>throwable</CODE> - the throwable to output, may be null<DD><CODE>stream</CODE> - the stream to output to, may not be null
+<DT><B>Parameters:</B><DD><CODE>throwable</CODE> - the throwable to fairplay.output, may be null<DD><CODE>stream</CODE> - the stream to fairplay.output to, may not be null
 <DT><B>Throws:</B>
 <DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html" title="class or interface in java.lang">IllegalArgumentException</A></CODE> - if the stream is <code>null</code><DT><B>Since:</B></DT>
   <DD>2.0</DD>
@@ -725,14 +725,14 @@ public static void <A HREF="../../../../../src-html/org/apache/commons/lang3/exc
  Then it prints the wrapped exception and continues with stack frames
  until the wrapper exception is caught and wrapped again, etc.</p>
 
- <p>The output of this method is consistent across JDK versions.
+ <p>The fairplay.output of this method is consistent across JDK versions.
  Note that this is the opposite order to the JDK1.4 display.</p>
 
  <p>The method is equivalent to <code>printStackTrace</code> for throwables
  that don't have nested causes.</p>
 <P>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>throwable</CODE> - the throwable to output, may be null<DD><CODE>writer</CODE> - the writer to output to, may not be null
+<DT><B>Parameters:</B><DD><CODE>throwable</CODE> - the throwable to fairplay.output, may be null<DD><CODE>writer</CODE> - the writer to fairplay.output to, may not be null
 <DT><B>Throws:</B>
 <DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html" title="class or interface in java.lang">IllegalArgumentException</A></CODE> - if the writer is <code>null</code><DT><B>Since:</B></DT>
   <DD>2.0</DD>
@@ -749,7 +749,7 @@ public static <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/St
 <DD><p>Creates a compact stack trace for the root cause of the supplied
  <code>Throwable</code>.</p>
 
- <p>The output of this method is consistent across JDK versions.
+ <p>The fairplay.output of this method is consistent across JDK versions.
  It consists of the root exception followed by each of its wrapping
  exceptions separated by '[wrapped]'. Note that this is the opposite
  order to the JDK1.4 display.</p>
@@ -769,7 +769,7 @@ removeCommonFrames</H3>
 public static void <A HREF="../../../../../src-html/org/apache/commons/lang3/exception/ExceptionUtils.html#line.550"><B>removeCommonFrames</B></A>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;causeFrames,
                                       <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;wrapperFrames)</PRE>
 <DL>
-<DD><p>Removes common frames from the cause trace given the two stack traces.</p>
+<DD><p>Removes fairplay.common frames from the cause trace given the two stack traces.</p>
 <P>
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>causeFrames</CODE> - stack trace of a cause throwable<DD><CODE>wrapperFrames</CODE> - stack trace of a wrapper throwable
